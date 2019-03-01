@@ -1,0 +1,133 @@
+<main class="content-box mb-5">
+    <!-- TABLA DESKTOP -->
+    <div class="container content-desktop">
+        <div class="title3">
+            <h3>Estas son tus cotizaciones</h3>
+        </div>
+
+        <div class="table-responsive table--sigue table--cotizaciones">
+            <table id="table-sigue" class="table">
+                <thead class="thead-gray">
+                    <tr>
+                        <th class="text" scope="col">Cotización</th>
+                        <th class="text" scope="col">Contenedor</th>
+                        <th class="text" scope="col">Origen</th>
+                        <th class="text" scope="col">Destino</th>
+                        <th class="text" scope="col">Servicios adicionales</th>
+                        <th class="text" scope="col"> </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td class="text cell-top">N2832-AA</td>
+                        <td class="text cell-top">FXEU232680</td>
+                        <td class="text cell-top">Mexicali</td>
+                        <td class="text cell-top">Pantaco</td>
+                        <!-- Usar clases "icon-seguro, icon-fumigacion, icon-asesoria, icon-sujecion" -->
+                        <td class="text cell-top">
+                            <span class="icon-seguro d-block mb-3"> &nbsp; Seguro </span>
+                            <span class="icon-fumigacion d-block mb-3"> &nbsp; Fumigación </span>
+                            <span class="icon-asesoria d-block mb-3"> &nbsp; Asesoría </span>
+                        </td>
+                        <td class="text-center cell-top">
+                            <a href="#" class="btn btn-default btn-brown"> FINALIZAR </a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- /TABLA DESKTOP -->
+
+    <!-- TABLA MOBILE -->
+    <div class="container content-mobile">
+        <div class="title3 align-center">
+            <h3>Estas son tus cotizaciones</h3>
+        </div>
+
+        <div class="cards-container">
+
+            <!-- SEARCH -->
+            <div class="search">
+                <input class="search__input form-control" type="text" placeholder="Buscar cotización…">
+                <i class="search__icon fas fa-search"></i>
+            </div>
+            <!-- /SEARCH -->
+
+            <!-- CARD -->
+
+            <div class="card card--table">
+                <div class="card__header">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Cotización: <span> <strong>N832-AA</strong> </span> </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__body">
+                    <div class="row">
+                        <div class="col-4">
+                            <h4>Contenedor</h4>
+                            <p>98A</p>
+                        </div>
+                        <div class="col-4">
+                            <h4>Origen</h4>
+                            <p>Mexicali</p>
+                        </div>
+                        <div class="col-4">
+                            <h4>Destino</h4>
+                            <p>Pantaco</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Servicios adicionales</h4>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <span class="icon-seguro"></span>
+                                    <p> Fumigación </p>
+                                </div>
+                                <div class="col text-center">
+                                    <span class="icon-fumigacion"></span>
+                                    <p> Fumigación </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__footer">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4> Monto: <strong> $18,450.00+IVA </strong></h4>
+                                </div>
+                                <div class="col-6 vertical-center">
+                                    <a href="#" class="btn btn-default btn-brown"> FINALIZAR </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /CARD -->
+        </div>
+
+        <!-- PAGING -->
+        <div class="dataTables_paginate paging--mobile">
+            <a class="paginate_button previous disabled">Previous</a>
+            <span>
+                <a class="paginate_button current">1</a>
+                <a class="paginate_button">2</a>
+                <a class="paginate_button">3</a>
+            </span>
+            <a class="paginate_button next">Next</a>
+        </div>
+        <!-- /PAGING -->
+    </div>
+    <!-- /TABLA MOBILE -->
+</main>

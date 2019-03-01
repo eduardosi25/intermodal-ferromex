@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.423214">
+        <g id="1.-Homepage" transform="translate(-1023.000000, -2693.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Video" transform="translate(281.000000, 2069.000000)">
+                <path d="M802,624 C768.88,624 742,650.88 742,684 C742,717.12 768.88,744 802,744 C835.12,744 862,717.12 862,684 C862,650.88 835.12,624 802,624 Z M784,721 L784,648 L832,684.5 L784,721 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

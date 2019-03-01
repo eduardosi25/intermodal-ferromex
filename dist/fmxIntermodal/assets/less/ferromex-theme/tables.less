@@ -1,0 +1,199 @@
+/* ------------------------------------------------------------
+    TABLES
+------------------------------------------------------------ */
+.content-table {
+
+    .dataTables_length,
+    .dataTables_filter,
+    .dataTables_info,
+    .dataTables_paginate {
+        width: 50%;
+        display: inline-block;
+        float: left;
+        margin-bottom: 20px;
+
+        select {
+            height: 32px;
+            background: 0;
+        }
+
+        label {
+            font-size: 15px;
+        }
+    }
+
+    .dataTables_filter {
+        input {
+            height: 32px;
+        }
+    }
+
+    .dataTables_info,
+    .dataTables_paginate {
+        font-size: 15px;
+    }
+
+    .paginate_button {
+        padding: 5px 10px;
+
+        &.disabled {
+            color: @cGray4;
+        }
+
+        &.next {
+            color: @cBlue2;
+        }
+
+        &.current {
+            background: @cBlue2;
+            color: @cWhite;
+        }
+
+        //Modificadores
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .form-control {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .thead-gray {
+        tr {
+            th {
+                border: 0;
+            }
+        }
+    }
+}
+
+input[type=search] {
+    -webkit-appearance: textfield !important;
+}
+
+//Registros
+.content-table {
+    padding: 20px 0;
+
+    .field-table {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        .form-field {
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+    }
+
+    .form-field {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .form-control {
+        &.form-search__table {
+            padding: 5px 45px 5px 5px;
+        }
+    }
+
+    .table {
+        .icon-trash,
+        .icon-pencil,
+        .icon-eye {
+            font-size: 15px;
+            margin-right: 10px;
+            color: @cGray4;
+
+            &:hover {
+                color: @cRed;
+            }
+        }
+
+        .icon-lock {
+            font-size: 15px;
+            color: @cGray3;
+        }
+
+        .icon-check {
+            font-size: 15px;
+            color: @cGreen;
+        }
+
+        .thead-gray {
+            background-color: @cBlue1;
+        }
+
+        .thead-graylight {
+            background-color: @cGray2;
+        }
+
+        .text {
+            .table__link {
+                text-decoration: underline;
+
+                &.table__link--red {
+                    color: @cRed;
+                }
+
+                &.table__link--gray {
+                    color: #212529;
+                }
+            }
+
+            &.back-red {
+                background-color: @cRed2;
+            }
+        }
+    }
+
+    .content-title5 {
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        .form-control  {
+            &.select-table {
+                height: 32px;
+            }
+        }
+
+        .text-label__full {
+            width: 100%;
+        }
+    }
+
+    .f-right {
+        float: right;
+    }
+
+    .be-datatable-header {
+
+        .icon-search {
+            position: absolute;
+            top: 11px;
+            text-align: right;
+            right: 0;
+            font-size: 14px;
+            margin-right: 20px;
+            color: @cGray4;
+        }
+
+        .form-size {
+            width: 100px;
+            display: inline-block;
+        }
+
+        .form-search__table {
+            height: 36px;
+        }
+    }
+}

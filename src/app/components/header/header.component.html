@@ -1,0 +1,170 @@
+<header>
+    <div class="nav-mobilebutton js-nav-menu" data-target="main-menu"></div>
+    <figure class="header-logo">
+        <a [routerLink]="['/home']">
+            <img src="../../assets/images/logotipos/logotipo-GM_white.svg" alt="logo">
+        </a>
+    </figure>
+    <nav class="nav-menu main-menu ">
+        <ul class="list-reset">
+            <li>
+                <a class="icon-home" [routerLink]="['/home']" [routerLinkActive]="['active']">Inicio </a>
+            </li>
+            <li>
+                <a class="icon-follow-pack" [routerLink]="['/sigue-tu-carga']" [routerLinkActive]="['active']">Sigue tu carga</a>
+            </li>
+            <li>
+                <a href="#" class="icon-pack" [routerLink]="['/prepara-tu-carga']" [routerLinkActive]="['active']">Prepara tu carga</a>
+            </li>
+            <li>
+                <a class="icon-aditional-services" [routerLink]="['/servicios-adicionales']" [routerLinkActive]="['active']">Servicios adicionales</a>
+            </li>
+            <li>
+                <a class="icon-contactus" [routerLink]="['/contactanos']" [routerLinkActive]="['active']">Contáctanos <span class=" option-mobile ">cnsc@imexgm.com.mx</span></a>
+            </li>
+            <li>
+                <a class="icon-faqs " [routerLink]="[ '/faqs']" [routerLinkActive]="['active']">FAQs</a>
+            </li>
+            <li class="option-desktop " *ngIf="!identity">
+                <a [routerLink]="['/registro-usuarios']" [routerLinkActive]="['active']">Registrarse</a>
+            </li>
+        </ul>
+
+        <!-- Comienza header con login -->
+
+        <ul class="nav navbar-nav be-user-nav" *ngIf="identity">
+            <li class="nav-item dropdown show">
+                <a href="#" data-toggle="dropdown" role="button" aria-expanded="true" class="nav-link dropdown-header">
+                    <img class="image__item" src="../../../assets/images/icons/icon-user.svg" alt="Avatar">
+                    <p class="text-white">{{ name }}</p>
+                    <i class="zmdi zmdi-chevron-down"></i>
+                </a>
+                <div role="menu" class="dropdown-menu">
+                    <a href="#" class="dropdown-item" [routerLink]="['/mi-cuenta']">
+                        <i class="zmdi zmdi-brightness-5"></i> Mi perfil
+                    </a>
+                    <a class="btn btn-default btn-lg btn-brown  btn-size1 js-desk-cotizar" href="#" (click)="logout();" [routerLink]="[ '/login'] " *ngIf="identity">Cerrar sesión</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="header-notification" *ngIf="identity">
+            <li class="nav-item dropdown f-right"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link nav-link__notification"><i class="zmdi zmdi-notifications"></i></a>
+                <ul class="dropdown-menu be-notifications dropdown__notifications--reset">
+                    <li class="content-notification">
+                        <div class="text text-center text-notification">Notificaciones<span class="badge badge-pill">3</span></div>
+                        <div class="list">
+                            <div class="be-scroller ps-container ps-theme-default ps-active-y" data-ps-id="b0c3ce81-e3da-335b-ddb1-30d9d7cdeac8">
+                                <div class="content">
+                                    <ul class="list-notification">
+                                        <li class="notification notification-unread">
+                                            <a class="notification-link__unread" href="#">
+                                                <div class="image"><img src="../assets/images/imagenes/pic1.png" alt="Avatar"></div>
+                                                <div class="notification-info">
+                                                    <div class="text"><span class="user-name">John Doe</span> accepted your invitation to join the team.</div>
+                                                    <span class="date">2 min</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification">
+                                            <a href="#" class="notification-link">
+                                                <div class="image">
+                                                    <img src="../assets/images/imagenes/pic4.png" alt="Avatar">
+                                                </div>
+                                                <div class="notification-info">
+                                                    <div class="text">
+                                                        <span class="user-name">Joel King</span> is now following you
+                                                    </div>
+                                                    <span class="date">5 h</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification">
+                                            <a href="#" class="notification-link">
+                                                <div class="image">
+                                                    <img src="../assets/images/imagenes/pic3.png" alt="Avatar">
+                                                </div>
+                                                <div class="notification-info">
+                                                    <div class="text">
+                                                        <span class="user-name">Jessica Caruso</span> is watching your main repository
+                                                    </div>
+                                                    <span class="date">2 días</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+                                    <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                </div>
+                                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px; height: 222px;">
+                                    <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 164px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <a class="footer-img" href="#">Ver más</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <!-- Termina header con login -->
+
+
+        <div class="btn-default btn-red login-btn option-desktop align-center " [routerLink]="[ '/login'] " *ngIf="!identity">INICIAR SESIÓN</div>
+
+        <div class="header-phone option-desktop ">
+            <a href="# ">
+                <i class="zmdi zmdi-phone icon-item__inside "></i>
+                <p>01800 220 IMEX</p>
+                <!--<span>4639</span>-->
+            </a>
+            <div class="header-contact ">
+                <p class="little-text text-gray ">Horario de atención:</p>
+                <p class="little-text text-white ">Lun – Vie: 7am a 7pm</p><br>
+                <p class="little-text text-white ">Sáb: 9am a 2pm</p>
+            </div>
+        </div>
+    </nav>
+    <div class="tools-headerMobile ">
+        <a href="#" class="header-chat "></a>
+        <a class="header-login no-sesion js-nav-menu " data-target="profile-menu "></a>
+    </div>
+    <nav class="nav-menu profile-menu ">
+        <div class="profile-sesion ">
+            <ul class="list-reset ">
+                <li>
+                    <a class="icon-pack " href="# ">Mis cargas </a>
+                </li>
+                <li>
+                    <a class="icon-docs " [routerLink]="['/cotizaciones']">Mis cotizaciones</a>
+                </li>
+                <li>
+                    <a class="icon-profile " href="# ">Mis datos</a>
+                </li>
+                <li>
+                    <a class="icon-signout " (click)="logout();" [routerLink]="[ '/login'] " *ngIf="identity"> Cerrar sesión</a>
+                </li>
+                <li>
+                    <a class="icon-train " [routerLink]="['/inicia-tu-carga']">Inicia tu carga</a>
+                </li>
+                <li>
+                    <a class="icon-step " href="# ">Primeros pasos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="profile-nosesion ">
+            <div class="profile-box profile-login ">
+                <p>¿Ya eres usuario?</p>
+                <div class="btn-default btn-red align-center " [routerLink]="['/login']">INICIAR SESIÓN</div>
+            </div>
+            <div class=" profile-box profile-register ">
+                <p>¿Aún no tienes cuenta?</p>
+                <p><a [routerLink]="[ '/registro-usuarios'] ">Registrate</a></p>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="push-header "></div>

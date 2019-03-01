@@ -1,0 +1,49 @@
+<main class="content-box">
+    <section class="module">
+        <div class="container">
+            <div class="form-basic">
+                <div class="title3 ">
+                    <h3 class="center-text">Acceso a usuarios</h3>
+                </div>
+                <form class="form-item center-content log-form" #registerForm="ngForm" (ngSubmit)="login()">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1 text">Correo electrónico</label>
+                        <input type="email" name="email" #email="ngModel" [(ngModel)]="user.username" class="form-control is-invalid is-invalid__1" id="exampleFormControlInput1" placeholder="correo@correo.com" required pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
+                        <div class="errorRegister" *ngIf="!email.valid && email.touched">
+                            <div class="errorRegister" *ngIf="!!email.errors.required">el email es requerido</div>
+                            <div class="errorRegister" *ngIf="email.hasError('pattern')">Verifica el formato del email</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="password" name="password" #password="ngModel" [(ngModel)]="user.password" class="form-control is-invalid is-invalid__1" minlength="8" placeholder="Contraseña" required>
+                        <div class="errorRegister" *ngIf="!password.valid && password.touched">
+                            <div class="errorRegister" *ngIf="!!password.errors.minlength">el password no puede tener menos de 8 caracteres</div>
+                            <div class="errorRegister" *ngIf="!!password.errors.required">el password es requerido</div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="alert alert-success" *ngIf="status == 'success'">
+                        Te has identificado correctamente, bienvenido! {{status}}
+                    </div>-->
+                    <div class="alert alert-danger" *ngIf="status == 'error'">
+                        {{userStatus}}
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" class="btn btn-default btn-red btn-xl btn-size1" data-toggle="modal" [disabled]="!registerForm.form.valid">
+                    </div>
+                    <div class="custom-checkbox__center">
+                        <input type="checkbox" [ngModelOptions]="{standalone: true}" [(ngModel)]="user.rememberMe" />
+                        <span class="custom-control-label">Recordar mi usuario</span>
+                    </div>
+
+                    <div class="form-bottom__links">
+                        <p class="center-text"><a [routerLink]="['/recuperacion-contrasena']" routerLinkActive="router-link-active" class="default-link">¿Olvidaste tu contraseña?</a></p>
+                        <p class="center-text">Si no tienes cuenta, <a [routerLink]="['/registro-usuarios']" routerLinkActive="router-link-active" class="default-link">Registrate aquí</a></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+</main>

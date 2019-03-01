@@ -1,0 +1,136 @@
+/* ------------------------------------------------------------
+    NOTIFICATIONS
+------------------------------------------------------------ */
+.ps-container {
+    -ms-touch-action: auto;
+    touch-action: auto;
+    overflow-y: scroll !important;
+    -ms-overflow-style: none;
+}
+
+.be-notifications {
+    width: 300px;
+    border-radius: 3px;
+    padding: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    border: 1px solid #e0e0e0;
+    box-sizing: content-box;
+}
+
+.be-notifications.show {
+    transform: none !important;
+    left: -199px !important;
+    top: 65px !important;
+}
+
+.be-notifications .be-scroller {
+    position: relative;
+    height: 222px;
+}
+
+.be-top-header .navbar-nav>li.dropdown .dropdown-menu {
+    border-radius: 3px;
+    margin-top: 12px;
+    line-height: 20px;
+}
+
+.be-notifications .be-scroller>.content>ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.be-notifications .notification.notification-unread {
+    background-color: #ebf2fe;
+    border-bottom: 1px solid #dce9fd;
+}
+
+.be-notifications .notification {
+    overflow: hidden;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.be-notifications .notification.notification-unread>a {
+    position: relative;
+}
+
+.be-notifications .notification.notification-unread>a:hover,
+.be-notifications .notification>a:hover  {
+    text-decoration: none;
+}
+
+.be-notifications .notification.notification-unread>a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 6px;
+    height: 6px;
+    background-color: #4285f4;
+    border-radius: 50%;
+}
+
+.be-notifications .notification>a {
+    padding: 15px;
+    display: block;
+    overflow: hidden;
+}
+
+.be-notifications .notification>a .image {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: #e4e4e4;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+
+.be-notifications .notification>a .image img {
+    height: 38px;
+    width: 38px;
+    font-size: 1.923rem;
+    color: #979595;
+    line-height: 36px;
+}
+
+.be-notifications .notification>a .notification-info {
+    padding-left: 50px;
+    line-height: 14px;
+}
+
+.be-notifications .notification>a .notification-info .text {
+    font-weight: 500;
+    color: #8a8a8a;
+    font-size: .9231rem;
+    line-height: 16px;
+}
+
+.be-notifications .notification>a .notification-info .user-name {
+    color: #4285f4;
+    font-size: 15px;
+}
+
+.be-notifications .notification>a .notification-info .date {
+    color: #8a8a8a;
+    display: block;
+    font-size: 10px;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+
+.be-icons-nav>li.dropdown .dropdown-menu .footer a {
+    background-color: #fafafa;
+    font-size: 1rem;
+    color: #8a8a8a;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ebebeb;
+    display: block;
+    outline: 0;
+}
+
+.list-notification {
+    overflow-y: scroll;
+    height: 220px;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="85px" height="80px" viewBox="0 0 85 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>turn-notifications-on-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 85 0 85 80 0 80"></polygon>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.1.2-Satisfacción-de-usuario" transform="translate(-678.000000, -172.000000)">
+            <g id="turn-notifications-on-button" transform="translate(678.000000, 172.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M22.6653175,6.405 L16.9939289,0.8 C7.29033986,8.01 0.809475626,19.2 0,31.99 L8.10487471,31.99 C8.91435034,21.19 14.1708827,11.99 22.6653175,6.405 Z M76.8951253,31.99 L85,31.99 C84.1905244,19.2 78.1194572,8.01 68.4006904,0.8 L62.7242426,6.405 C70.8291173,11.99 76.0856497,21.19 76.8951253,31.99 Z M68.8155467,34.005 C68.8155467,21.6 60.3160526,11.6 48.578656,8.81 L48.578656,5.995 C48.578656,2.795 45.7303137,0 42.4873519,0 C39.2696863,0 36.421344,2.795 36.421344,5.995 L36.421344,8.81 C24.6839474,11.6 16.1844533,21.6 16.1844533,34.005 L16.1844533,55.995 L8.10487471,64.005 L8.10487471,68.01 L76.8951253,68.01 L76.8951253,64.005 L68.8155467,55.995 L68.8155467,34.005 Z M42.4873519,80 L44.1113624,80 C46.9546456,79.61 48.9732754,77.6 49.782751,75.195 C50.1976073,74.395 50.5922267,73.205 50.5922267,71.99 L34.4077733,71.99 C34.4077733,76.405 38.0453544,80 42.4873519,80 Z" id="Fill-1" fill="#939BA1" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

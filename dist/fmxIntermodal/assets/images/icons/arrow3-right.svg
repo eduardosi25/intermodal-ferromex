@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="17px" viewBox="0 0 9 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>right-arrrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.-Homepage" transform="translate(-1152.000000, -413.000000)" fill="#DDE2E6" fill-rule="nonzero" stroke="#DDE2E6">
+            <g id="Hero" transform="translate(5.000000, -12.000000)">
+                <g id="step2" transform="translate(900.000000, 320.000000)">
+                    <g id="right-arrrow" transform="translate(247.000000, 105.000000)">
+                        <g id="down-arrow" transform="translate(4.500000, 8.500000) rotate(-360.000000) translate(-4.500000, -8.500000) translate(0.500000, 0.500000)">
+                            <path d="M0.901771337,15.1147335 C0.798711755,15.2200627 0.669887279,15.2727273 0.528180354,15.2727273 C0.38647343,15.2727273 0.257648953,15.2200627 0.154589372,15.1147335 C-0.0515297907,14.9040752 -0.0515297907,14.5617555 0.154589372,14.3510972 L6.72463768,7.63636364 L0.154589372,0.921630094 C-0.0515297907,0.710971787 -0.0515297907,0.368652038 0.154589372,0.15799373 C0.360708535,-0.0526645768 0.695652174,-0.0526645768 0.901771337,0.15799373 L7.84541063,7.25454545 C8.05152979,7.46520376 8.05152979,7.80752351 7.84541063,8.01818182 L0.901771337,15.1147335 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

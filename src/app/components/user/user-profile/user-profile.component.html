@@ -1,0 +1,114 @@
+<main class="content-box">
+    <section class="module">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-reset">
+                    <li class="breadcrumb-item"><a class="text" href="#">Mi cuenta</a></li>
+                    <li class="breadcrumb-item text active" aria-current="page">Mis datos</li>
+                </ol>
+            </nav>
+
+            <div class="form-basic bg-gray pad-tb">
+                <div class="title3 ">
+                    <h3 class="center-text">Mis datos</h3>
+                </div>
+                <form class="form-item center-content reg-form" [formGroup]="forma" (ngSubmit)="onSubmit()" novalidate="novalidate" *ngIf="dataUser">
+                    <ul class="form-cols list-reset">
+                        <li>
+                            <div class="form-group col-md-6 col-xs-12 wo-pad-both">
+                                <label for="exampleFormControlInput1 text">Nombre (s) </label>
+                                <input type="text" name="name" formControlName="name" class="form-control" [ngClass]="{'is-invalid':forma.get('name').invalid}" type="text" placeholder="{{dataUser.name}}" formControlName="name">
+                                <div *ngIf="!forma.controls['name'].valid" class="invalid-feedback">
+                                    <div *ngIf="forma.controls['name'].errors?.required" class="form-control-feedback">
+                                        El nombre es requerido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-xs-12 wo-pad-both">
+                                <label for="exampleFormControlInput1 text">Apellido paterno</label>
+                                <input type="text" name="lastname" formControlName="lastname" class="form-control" placeholder="{{dataUser.lastname}}" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group col-md-6 col-xs-12 wo-pad-both">
+                                <label for="exampleFormControlInput1 text">Apellido materno</label>
+                                <input type="text" name="lastname2" formControlName="lastname2" class="form-control" placeholder="{{dataUser.lastname2}}" />
+
+                            </div>
+
+
+                            <div class="form-group col-md-6 col-xs-12 wo-pad-both">
+                                <label for="exampleFormControlInput1 text">Teléfono (10 digitos) </label>
+                                <input type="text" name="phone" formControlName="phone" class="form-control" [ngClass]="{'is-invalid':forma.get('phone').invalid}" placeholder="{{dataUser.phone}}" maxlength="10" />
+                                <div *ngIf="!forma.controls['phone'].valid" class="invalid-feedback">
+                                    <div *ngIf="forma.controls['phone'].errors?.pattern" class="form-control-feedback">
+                                        El teléfono debe de contener únicamente 10 números.
+                                    </div>
+                                    <div *ngIf="forma.controls['phone'].errors?.required" class="form-control-feedback">
+                                        El teléfono es requerido.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group col-md-12 col-xs-12 wo-pad-both">
+                                <label for="exampleFormControlInput1 text">Correo electrónico </label>
+                                <input type="text" name="email" formControlName="email" class="form-control" [ngClass]="{'is-invalid':forma.get('email').invalid}" placeholder="{{dataUser.email}}">
+                                <div *ngIf="!forma.controls['email'].valid" class="invalid-feedback">
+                                    <div *ngIf="forma.controls['email'].errors?.pattern" class="form-control-feedback">
+                                        Revisa el formato de email.
+                                    </div>
+                                    <div *ngIf="forma.controls['email'].errors?.required" class="form-control-feedback">
+                                        El email es requerido.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6 col-xs-12 wo-pad-both">
+                                <label for="exampleFormControlInput1 text">Contraseña</label>
+                                <input type="password" name="password" formControlName="password" class="form-control" [ngClass]="{'is-invalid':forma.get('password').invalid}" placeholder="Mínimo 8 caracteres alfanuméricos" />
+                                <div *ngIf="!forma.controls['password'].valid" class="invalid-feedback">
+                                    <div *ngIf="forma.controls['password'].errors?.minlength" class="form-control-feedback">
+                                        El mínimo son 8 caracteres.
+                                    </div>
+                                    <div *ngIf="forma.controls['password'].errors?.required" class="form-control-feedback">
+                                        El password es requerido.
+                                    </div>
+                                    <div *ngIf="forma.controls['password'].errors?.pattern" class="form-control-pattern">
+                                        Hay caracteres alfanuméricos
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group col-md-6 col-xs-12 wo-pad-both">
+                                <label for="exampleFormControlInput1 text">Confirmar contraseña</label>
+                                <input type="password" name="password2" formControlName="password2" class="form-control" [ngClass]="{'is-invalid':forma.get('password2').invalid}" placeholder="Mínimo 8 caracteres alfanuméricos" />
+                                <div *ngIf="!forma.controls['password2'].valid" class="invalid-feedback">
+                                    <div *ngIf="forma.controls['password2'].errors?.required" class="form-control-pattern">
+                                        Confirma tu password
+                                    </div>
+                                    <div *ngIf="forma.controls['password2'].errors?.noiguales" class="form-control-pattern">
+                                        tu password no coincide
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <div>
+                    </div>
+                    {{forma.valid}}
+
+
+                    <div class="text-center pt-5">
+                        <button type="button" class="btn btn-default btn-link btn-xl btn-size1"> Cancelar </button>
+                        <button type="submit" class="btn btn-default btn-red btn-xl btn-size1"> GUARDAR </button>
+                        <!-- [disabled]=" !forma.valid " -->
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+</main>

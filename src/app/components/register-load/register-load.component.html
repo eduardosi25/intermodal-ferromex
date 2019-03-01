@@ -1,0 +1,1226 @@
+<main class="content-box mb-5">
+    <section class="registra-carga step-process">
+        <div class="container">
+            <div class="title3 content-desktop">
+                <h3>Registra tu carga</h3>
+            </div>
+
+            <!-- STEPER -->
+            <section class="stepper-container fuelux mt-xs-0 mt-md-4 mt-lg-5">
+                <div id="steper" class="wizard wizard-relative">
+                    <div class="steps-container text-center text-lg-left">
+                        <ul class="steps clearfix">
+                            <li data-step="1" class="text prev">
+                                <span class="step-number">1</span>
+                                <span class="step-name">Cotiza</span>
+                                <span class="chevron"></span>
+                            </li>
+                            <li data-step="2" class="text active">
+                                <span class="step-number">2</span>
+                                <span class="step-name">Registra</span>
+                                <span class="chevron"></span>
+                            </li>
+                            <li data-step="3" class="text">
+                                <span class="step-number">3</span>
+                                <span class="step-name">Factura</span>
+                                <span class="chevron"></span>
+                            </li>
+                            <li data-step="4" class="text">
+                                <span class="step-number">4</span>
+                                <span class="step-name">Paga</span>
+                                <span class="chevron"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- /STEPER -->
+
+            <!-- TOTAL MOBILE -->
+            <div class="total-cost content-mobile">
+                <div class="row">
+                    <div class="col-8">
+                        <strong><p>Monto a facturar</p></strong>
+                        <h2>$16,330.00<span class="iva">&nbsp;MXN + IVA</span> </h2>
+                    </div>
+                    <div class="col-4 text-right">
+                        <a href="#" class="btn btn-default btn-link" data-toggle="modal" data-target="#modalResumen">Ver resumen</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /TOTAL MOBILE -->
+
+            <!-- FORMULARIO MOBILE -->
+            <div class="step-process__form content-mobile my-5">
+                <div class="form-basic">
+                    <form action="" class="form-item">
+                        <div class="col-12">
+                            <div class="datos-origen margin-b">
+
+                                <h3><b>a. Origen</b> - Registra los datos de donde recogeremos tu carga</h3>
+                                <div class="accordion-content">
+                                    <div class="accordion-content__item">
+                                        <div class="accordion-tab js-accordion-tab">
+                                            <div class="btn-toggle-accordion"></div>
+                                            <p><strong>1. Contacto Origen<a class="btn btn-lg" data-toggle="tooltip" title data-placement="bottom" data-original-title="Ingresa los datos del contacto que va a cargar tu carga en el tren"><i class="fa fa-info-circle"></i></a></strong></p>
+                                        </div>
+                                        <div class="accordion-panel">
+                                            <ul class="form-cols list-reset">
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Nombre completo *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce nombre">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Correo electrónico *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Correo electrónico">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Número telefónico *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número telefónico">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-content">
+                                    <div class="accordion-content__item">
+                                        <div class="accordion-tab js-accordion-tab">
+                                            <div class="btn-toggle-accordion"></div>
+                                            <p><strong>2. Dirección de Origen</strong></p>
+                                        </div>
+                                        <div class="accordion-panel">
+                                            <ul class="form-cols list-reset">
+                                                <li>
+                                                    <b>Registrar dirección</b>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Código Postal *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Ingresa tu código postal">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="select">
+                                                    <label for="colonia">Colonia *</label>
+                                                    <div class="input-group form-group">
+                                                        <select class="form-control" id="colonia">
+                                                            <option disabled selected >Seleccionar...</option>
+                                                            <option>Colonia 1</option>
+                                                            <option>Colonia 2</option>
+                                                            <option>Colonia 3</option>
+                                                            <option>Colonia 4</option>
+                                                            <option>Colonia 5</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Calle *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce calle">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <li>
+                                                            <div class="form-group wo-pad-both">
+                                                                <label for="exampleFormControlInput1 text">Exterior *</label>
+                                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número exterior">
+                                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <li>
+                                                            <div class="form-group wo-pad-both">
+                                                                <label for="exampleFormControlInput1 text">Interior *</label>
+                                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número interior">
+                                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </div>
+                                                </div>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Municipio/Alcaldía *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce Municipio o Alcaldía" disabled>
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Estado *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce Estado" disabled>
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-content">
+                                    <div class="accordion-content__item">
+                                        <div class="accordion-tab js-accordion-tab">
+                                            <div class="btn-toggle-accordion"></div>
+                                            <p><strong>3. Referencias adicionales Origen</strong>
+                                                <a class="btn btn-lg" data-toggle="tooltip" data-placement="bottom" data-original-title="Es la información necesaria para poder cargar en origen (documentos, instrucciones y requisitos)"><i class="fa fa-info-circle"></i></a>
+                                            </p>
+                                        </div>
+                                        <div class="accordion-panel">
+                                            <ul class="form-cols list-reset">
+                                                <div class="row mb-5">
+                                                    <div class="col-9 select">
+                                                        <li>
+                                                            <label for="banco">Documentos</label>
+                                                            <div class="input-group">
+                                                                <select class="form-control" id="colonia">
+                                                                    <option disabled selected>Seleccionar...</option>
+                                                                    <option>Documento 1</option>
+                                                                    <option>Documento 2</option>
+                                                                    <option>Documento 3</option>
+                                                                    <option>Documento 4</option>
+                                                                    <option>Documento 5</option>
+                                                                </select>
+                                                            </div>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <button class="btn rm-doc"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-group textarea">
+                                                            <label for="exampleFormControlTextarea1">Comentarios o instrucciones adicionales</label>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Comentarios..."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-5">
+                                                    <div class="col-12">
+                                                        <li>
+                                                            <button class="btn btn-attach btn-block">Adjuntar documento (pdf, jpg, png, gif)</button>
+                                                        </li>
+                                                        <small>Peso máximo admitido: 2MB</small>
+                                                    </div>
+                                                </div>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-content">
+                                    <div class="accordion-content__item">
+                                        <div class="accordion-tab js-accordion-tab">
+                                            <div class="btn-toggle-accordion"></div>
+                                            <p><strong>4. Documentación</strong></p>
+                                        </div>
+                                        <div class="accordion-panel">
+
+                                            <ul class="form-cols list-reset">
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Número de reserva<small>&nbsp;&nbsp;(Booking)</small></label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="1234567890" disabled>
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Clasificación de carga</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Freight All Kinds (FAK)" disabled>
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li id="weight">
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">El peso neto de mi carga es:*</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Peso de tu carga">
+                                                        <a class="btn btn-lg" data-toggle="tooltip" data-placement="bottom" data-original-title="Peso máximo permitido: Tu carga además de la correcta distribución en el contenedor debe cumplir con un peso máximo de 22 toneladas, ya que de exceder este límite se rechazará el servicio y tendrás que absorber los costos de maniobra"><i class="fa fa-info-circle"></i></a>
+                                                        <small>Peso máximo admitido: 22 toneladas</small>
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h3 class="mt-5 mb-4"><b>4.1 Seguro seleccionado</b></h3>
+                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                                        sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.</p>
+                                                    <div class="box-btns__left pt-2 margin-b">
+                                                        <button type="button" class="btn btn-default btn-gray btn-sm"> QUITAR SEGURO </button>
+                                                        <button type="button" class="btn btn-default btn-brown btn-sm"> VOLVER A COTIZAR </button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-content">
+                                    <div class="accordion-content__item">
+                                        <div class="accordion-tab js-accordion-tab">
+                                            <div class="btn-toggle-accordion"></div>
+                                            <p><strong>5. Servicios adicionales</strong></p>
+                                        </div>
+                                        <div class="accordion-panel" id="accordion-carousel">
+                                            <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+                                                <div class="carousel-inner text-center">
+                                                    <div class="carousel-item active">
+                                                        <ul class="form-cols list-reset">
+                                                            <li>
+                                                                <div class="form-group wo-pad-both">
+                                                                    <label class="tall-label">Fumigación</label>
+                                                                    <label class="be-checkbox custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input">
+                                                                        <span class="custom-control-label">Fumigación de grado alimenticio</span>
+                                                                    </label>
+                                                                    <label class="be-checkbox custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input">
+                                                                        <span class="custom-control-label">Fumigación de plagas</span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <ul class="form-cols list-reset">
+                                                            <li>
+                                                                <div class="form-group wo-pad-both">
+                                                                    <label class="tall-label" for="exampleFormControlInput1 text">Sistema de sujeción de carga<a class="btn btn-lg btn-tight" data-toggle="tooltip" title data-placement="bottom" data-original-title="Describe las características de tu carga y puedes contactarnos para darte apoyo (ejemplo: 'Mi carga es de 18 barriles metálicos de 30 x 120 cm')"><i class="fa fa-info-circle"></i></a></label>
+                                                                    <div class="form-group textarea">
+                                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Describe las características de tu carga..."></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="form-group wo-pad-both">
+                                                            <label class="tall-label">Asesoría en preparación de embarques (sin costo)</label>
+                                                            <p>Marca al 01 800 123 4567</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="datos-destino margin-mp">
+                                <h3><b>b. Destino</b> - Registra los datos de donde entregaremos tu carga</h3>
+                                <div class="accordion-content">
+                                    <div class="accordion-content__item">
+                                        <div class="accordion-tab js-accordion-tab">
+                                            <div class="btn-toggle-accordion"></div>
+                                            <p><strong>1. Contacto Destino</strong><a class="btn btn-lg" data-toggle="tooltip" title data-placement="bottom" data-original-title="Ingresa los datos del contacto que va a descargar tu carga en destino"><i class="fa fa-info-circle"></i></a></p>
+                                        </div>
+                                        <div class="accordion-panel">
+                                            <ul class="form-cols list-reset">
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Nombre completo *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce nombre">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Correo electrónico *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Correo electrónico">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Número telefónico *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número telefónico">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-content">
+                                    <div class="accordion-content__item">
+                                        <div class="accordion-tab js-accordion-tab">
+                                            <div class="btn-toggle-accordion"></div>
+                                            <p><strong>2. Dirección de Destino</strong></p>
+                                        </div>
+                                        <div class="accordion-panel">
+                                            <ul class="form-cols list-reset">
+                                                <li>
+                                                    <b>Registrar dirección</b>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Código Postal *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Ingresa tu código postal">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="select">
+                                                    <label for="colonia">Colonia *</label>
+                                                    <div class="input-group form-group">
+                                                        <select class="form-control" id="colonia">
+                                                            <option disabled selected >Seleccionar...</option>
+                                                            <option>Colonia 1</option>
+                                                            <option>Colonia 2</option>
+                                                            <option>Colonia 3</option>
+                                                            <option>Colonia 4</option>
+                                                            <option>Colonia 5</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Calle *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce calle">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="form-group wo-pad-both">
+                                                                <label for="exampleFormControlInput1 text">Ext *</label>
+                                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número exterior">
+                                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-group wo-pad-both">
+                                                                <label for="exampleFormControlInput1 text">Int *</label>
+                                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número interior">
+                                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Estado *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce Estado" disabled>
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Municipio/Alcaldía *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce Municipio o Alcaldía" disabled>
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-content">
+                                    <div class="accordion-content__item">
+                                        <div class="accordion-tab js-accordion-tab">
+                                            <div class="btn-toggle-accordion"></div>
+                                            <p><strong>3. Referencias adicionales Destino</strong>
+                                                <a class="btn btn-lg" data-toggle="tooltip" data-placement="bottom" data-original-title="Es la información necesaria para poder descargar en destino (documentos, instrucciones y requisitos)"><i class="fa fa-info-circle"></i></a>
+                                            </p>
+                                        </div>
+                                        <div class="accordion-panel">
+                                            <ul class="form-cols list-reset">
+                                                <div class="row mb-5">
+                                                    <div class="col-9 select">
+                                                        <li>
+                                                            <label for="banco">Documentos</label>
+                                                            <div class="input-group">
+                                                                <select class="form-control" id="colonia">
+                                                                    <option disabled selected>Seleccionar...</option>
+                                                                    <option>Documento 1</option>
+                                                                    <option>Documento 2</option>
+                                                                    <option>Documento 3</option>
+                                                                    <option>Documento 4</option>
+                                                                    <option>Documento 5</option>
+                                                                </select>
+                                                            </div>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <button class="btn rm-doc"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-group textarea">
+                                                            <label for="exampleFormControlTextarea1">Comentarios o instrucciones adicionales</label>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Comentarios..."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-5">
+                                                    <div class="col-12">
+                                                        <li>
+                                                            <button class="btn btn-attach btn-block">Adjuntar documento (pdf, jpg, png, gif)</button>
+                                                        </li>
+                                                        <small>Peso máximo admitido: 2MB</small>
+                                                    </div>
+                                                </div>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-btns__right pt-5 margin-b text-center">
+                                <a href="#" class="btn btn-default btn-link btn-xl"><i class="fa fa-arrow-left"></i> REGRESAR </a>
+                                <a href="#" class="btn btn-default btn-red btn-xl"> SIGUIENTE </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /FORMULARIO MOBILE -->
+
+            <!-- FORMULARIO DESKTOP -->
+            <div class="row mt-5 step-process__form content-desktop">
+                <!-- FORMULARIO REGISTRO -->
+                <div class="col-8">
+                    <div class="form-basic">
+                        <form class="form-item">
+
+
+                            <!-- DATOS ORIGEN Y DESTINO -->
+                            <div class="row ruler-bottom">
+
+                                <div class="col-6 datos-origen">
+
+                                    <h3><b>a. Origen</b> - Registra los datos de donde recogeremos tu carga</h3>
+                                    <h3 class="mt-5 mb-4"><b>Contacto Origen</b><a class="btn btn-lg" data-toggle="tooltip" title data-placement="bottom" data-original-title="Ingresa los datos del contacto que va a cargar tu carga en el tren"><i class="fa fa-info-circle"></i></a></h3>
+                                    <ul class="form-cols list-reset">
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Nombre completo *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce nombre">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Correo electrónico *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Correo electrónico">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Número telefónico *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número telefónico">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <h3 class="mt-5 mb-4"><b>Dirección de Origen</b></h3>
+                                    <h4 class="mb-4">Registrar dirección</h4>
+                                    <ul class="form-cols list-reset">
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Calle *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce calle">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Ext *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número exterior">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="col-6">
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">int *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número interior">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 select">
+                                                <li>
+                                                    <label for="colonia">Colonia *</label>
+                                                    <div class="input-group">
+                                                        <select class="form-control" id="colonia">
+                                                            <option disabled selected >Seleccionar...</option>
+                                                            <option>Colonia 1</option>
+                                                            <option>Colonia 2</option>
+                                                            <option>Colonia 3</option>
+                                                            <option>Colonia 4</option>
+                                                            <option>Colonia 5</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="col-6">
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Código Postal *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Ingresa tu código postal">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Estado *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce Estado">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Municipio/Alcaldía *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce Municipio o Alcaldía">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <h3 class="mt-5 mb-4"><b>Referencias adicionales Origen</b>
+                                        <a class="btn btn-lg" data-toggle="tooltip" data-placement="bottom" data-original-title="Es la información necesaria para poder cargar en origen (documentos, instrucciones y requisitos)"><i class="fa fa-info-circle"></i></a>
+                                    </h3>
+                                    <ul class="form-cols list-reset">
+                                        <div class="row mb-5">
+                                            <div class="col-9 select">
+                                                <li>
+                                                    <label for="banco">Documentos</label>
+                                                    <div class="input-group">
+                                                        <select class="form-control" id="colonia">
+                                                            <option disabled selected>Seleccionar...</option>
+                                                            <option>Documento 1</option>
+                                                            <option>Documento 2</option>
+                                                            <option>Documento 3</option>
+                                                            <option>Documento 4</option>
+                                                            <option>Documento 5</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="col-3">
+                                                <button class="btn rm-doc"></button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group textarea">
+                                                    <label for="exampleFormControlTextarea1">Comentarios o instrucciones adicionales</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Comentarios..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-5">
+                                            <div class="col-12">
+                                                <li>
+                                                    <div class="btn btn-attach btn-block js-attach">
+                                                        <span class="btn-attach__path">Adjuntar documento (pdf, jpg, png, gif)</span>
+                                                        <input type="file" />
+                                                    </div>
+                                                </li>
+                                                <small>Peso máximo admitido: 2MB</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-5">
+                                            <div class="col-9 select">
+                                                <li>
+                                                    <label for="banco">Documentos</label>
+                                                    <div class="input-group">
+                                                        <select class="form-control" id="colonia">
+                                                            <option disabled selected>Seleccionar...</option>
+                                                            <option>Documento 1</option>
+                                                            <option>Documento 2</option>
+                                                            <option>Documento 3</option>
+                                                            <option>Documento 4</option>
+                                                            <option>Documento 5</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="col-3">
+                                                <button class="btn add-doc"></button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group textarea">
+                                                    <label for="exampleFormControlTextarea1">Comentarios o instrucciones adicionales</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Comentarios..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <li>
+                                                    <div class="btn btn-attach btn-block js-attach">
+                                                        <span class="btn-attach__path">Adjuntar documento (pdf, jpg, png, gif)</span>
+                                                        <input type="file" />
+                                                    </div>
+                                                    <small>Peso máximo admitido: 2MB</small>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+
+                                <div class="col-6 datos-destino">
+
+                                    <h3><b>b. Destino</b> - Registra los datos de donde entregaremos tu carga</h3>
+                                    <h3 class="mt-5 mb-4"><b>Contacto Destino</b><a class="btn btn-lg" data-toggle="tooltip" title data-placement="bottom" data-original-title="Ingresa los datos del contacto que va a descargar tu carga en destino"><i class="fa fa-info-circle"></i></a></h3>
+                                    <ul class="form-cols list-reset">
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Nombre completo *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce nombre">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Correo electrónico *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Correo electrónico">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Número telefónico *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número telefónico">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <h3 class="mt-5 mb-4"><b>Dirección de Destino</b></h3>
+                                    <h4 class="mb-4">Registrar dirección</h4>
+                                    <ul class="form-cols list-reset">
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Calle *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce calle">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Exterior *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número exterior">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="col-6">
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Interior *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Número interior">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 select">
+                                                <li>
+                                                    <label for="banco">Colonia *</label>
+                                                    <div class="input-group">
+                                                        <select class="form-control" id="colonia">
+                                                            <option disabled selected>Seleccionar...</option>
+                                                            <option>Colonia 1</option>
+                                                            <option>Colonia 2</option>
+                                                            <option>Colonia 3</option>
+                                                            <option>Colonia 4</option>
+                                                            <option>Colonia 5</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="col-6">
+                                                <li>
+                                                    <div class="form-group wo-pad-both">
+                                                        <label for="exampleFormControlInput1 text">Código Postal *</label>
+                                                        <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Ingresa tu código postal">
+                                                        <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                            <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Estado *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce Estado">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Municipio/Alcaldía *</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Introduce Municipio o Alcaldía">
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <h3 class="mt-5 mb-4"><b>Referencias adicionales Destino</b>
+                                        <a class="btn btn-lg" data-toggle="tooltip" data-placement="bottom" data-original-title="Es la información necesaria para poder descargar en destino (documentos, instrucciones y requisitos)"><i class="fa fa-info-circle"></i></a>
+                                    </h3>
+                                    <ul class="form-cols list-reset">
+                                        <div class="row mb-5">
+                                            <div class="col-9 select">
+                                                <li>
+                                                    <label for="banco">Documentos</label>
+                                                    <div class="input-group">
+                                                        <select class="form-control" id="colonia">
+                                                            <option disabled selected>Seleccionar...</option>
+                                                            <option>Documento 1</option>
+                                                            <option>Documento 2</option>
+                                                            <option>Documento 3</option>
+                                                            <option>Documento 4</option>
+                                                            <option>Documento 5</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                            <div class="col-3">
+                                                <div>
+                                                    <button class="btn rm-doc"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <li>
+                                                    <div class="form-group textarea">
+                                                        <label for="exampleFormControlTextarea1">Comentarios o instrucciones adicionales</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Comentarios..."></textarea>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <li>
+                                                    <div class="btn btn-attach btn-block js-attach">
+                                                        <span class="btn-attach__path">Adjuntar documento (pdf, jpg, png, gif)</span>
+                                                        <input type="file" />
+                                                    </div>
+                                                    <small>Peso máximo admitido: 2MB</small>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /DATOS ORIGEN Y DESTINO -->
+
+
+                            <!-- DOCUMENTACIÓN -->
+                            <div class="row ruler-bottom">
+                                <div class="col-12">
+                                    <h3 class="mt-5 mb-4"><b>Documentación</b></h3>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="form-cols list-reset">
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Número de reserva<small>&nbsp;&nbsp;(Booking)</small></label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="1234567890" disabled>
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="form-cols list-reset">
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">Clasificación de carga</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Freight All Kinds (FAK)" disabled>
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4" id="weight">
+                                    <ul class="form-cols list-reset">
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label for="exampleFormControlInput1 text">El peso neto de mi carga es:*</label>
+                                                <input type="text" class="form-control is-invalid is-invalid__1" placeholder="Peso de tu carga">
+                                                <a class="btn btn-lg" data-toggle="tooltip" data-placement="bottom" data-original-title="Peso máximo permitido: Tu carga además de la correcta distribución en el contenedor debe cumplir con un peso máximo de 22 toneladas, ya que de exceder este límite se rechazará el servicio y tendrás que absorber los costos de maniobra"><i class="fa fa-info-circle"></i></a>
+                                                <small>Peso máximo admitido: 22 toneladas</small>
+                                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /DOCUMENTACIÓN -->
+
+
+                            <!-- SEGURO SELECCIONADO -->
+                            <div class="row ruler-bottom">
+                                <div class="col-12">
+                                    <h3 class="mt-5 mb-4"><b>Seguro seleccionado</b></h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                        Nemo enim ipsam voluptatem quia voluptas.</p>
+                                    <div class="box-btns__left pt-5 margin-b">
+                                        <button type="button" class="btn btn-default btn-gray btn-xl btn-size1"> QUITAR SEGURO </button>
+                                        <button type="button" class="btn btn-default btn-brown btn-xl btn-size1" data-toggle="modal" data-target="#seguro"> VOLVER A COTIZAR </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /SEGURO SELECCIONADO -->
+
+
+                            <!-- SERVICIOS ADICIONALES -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="mt-5 mb-4"><b>Servicios adicionales</b></h3>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="form-cols list-reset">
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label class="tall-label">Fumigación</label>
+                                                <label class="be-checkbox custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-label">Fumigación de grado alimenticio</span>
+                                                </label>
+                                                <label class="be-checkbox custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-label">Fumigación de plagas</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="form-cols list-reset">
+                                        <li>
+                                            <div class="form-group wo-pad-both">
+                                                <label class="tall-label" for="exampleFormControlInput1 text">Sistema de sujeción de carga<a class="btn btn-lg btn-tight" data-toggle="tooltip" title data-placement="bottom" data-original-title="Describe las características de tu carga y puedes contactarnos para darte apoyo (ejemplo: 'Mi carga es de 18 barriles metálicos de 30 x 120 cm')"><i class="fa fa-info-circle"></i></a></label>
+                                                <div class="form-group textarea">
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Describe las características de tu carga..."></textarea>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4" id="weight">
+                                    <label class="tall-label">Asesoría en preparación de embarques (sin costo)</label>
+                                    <p>Marca al 01 800 123 4567</p>
+                                </div>
+                            </div>
+                            <!-- /SERVICIOS ADICIONALES -->
+
+                            <div class="box-btns__right pt-5 margin-b">
+                                <a href="#" class="btn btn-default btn-link btn-xl"><i class="fa fa-arrow-left"></i> REGRESAR </a>
+                                <a href="#" class="btn btn-default btn-red btn-xl btn-size1"> SIGUIENTE </a>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+                <!-- /FORMULARIO REGISTRO -->
+
+                <div class="offset-1"></div>
+
+                <!-- RESUMEN -->
+                <div class="col-3 resumen-quote content-desktop">
+                    <div class="total-cost">
+                        <strong><p>Monto a facturar</p></strong>
+                        <h2>$16,330.00 <span class="iva">MXN + IVA</span> </h2>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content__item">
+                            <div class="accordion-tab js-accordion-tab">
+                                <div class="btn-edit">
+                                    <i class="fa fa-edit"></i>
+                                </div>
+                                <div class="btn-toggle-accordion"></div>
+                                <p><strong>Resumen</strong></p>
+                            </div>
+                            <div class="accordion-panel">
+
+                                <div class="accordion-datum">
+                                    <h4>Ruta:</h4>
+                                    <p>Mexicali-Pantaco</p>
+                                </div>
+                                <div class="accordion-datum">
+                                    <h4>Origen:</h4>
+                                    <p>Mexicali Zona Metropolitana</p>
+                                </div>
+                                <div class="accordion-datum">
+                                    <h4>Destino:</h4>
+                                    <p>Pantaco CDMX</p>
+                                </div>
+
+                                <hr>
+
+                                <div class="accordion-datum">
+                                    <h4>Fecha de recolección:</h4>
+                                    <p>7 enero 2019</p>
+                                </div>
+                                <div class="accordion-datum">
+                                    <h4>Horario:</h4>
+                                    <p>12:00 hrs</p>
+                                </div>
+                                <div class="accordion-datum">
+                                    <h4>Fecha de entrega:</h4>
+                                    <p>9 enero 2019</p>
+                                </div>
+                                <div class="accordion-datum">
+                                    <h4>Horario:</h4>
+                                    <p>12:00 hrs</p>
+                                </div>
+
+                                <hr>
+
+                                <div class="accordion-datum">
+                                    <h4>Cantidad de contenedores:</h4>
+                                    <p>2 Dry 53'</p>
+                                    <p>3 HC 53'</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="accordion-content__item">
+                            <div class="accordion-tab js-accordion-tab">
+                                <div class="btn-toggle-accordion"></div>
+                                <p><strong>Responsables</strong></p>
+                            </div>
+                            <div class="accordion-panel">
+                                <div class="accordion-datum">
+                                    <div class="btn-edit-panel">
+                                        <i class="fa fa-edit"></i>
+                                    </div>
+                                    <h4>Responsable de entrega:</h4>
+                                    <p>John Carter</p>
+                                    <p class="contact">mail@mail.com</p>
+                                    <p class="contact">677 1234</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /RESUMEN -->
+
+            </div>
+            <!-- FORMULARIO DESKTOP -->
+
+            <!-- MODAL -->
+            <div class="modal fade" id="modalResumen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="resumen-quote">
+                                <div class="accordion-content">
+                                    <div class="accordion-content__item">
+                                        <div class="accordion-tab js-accordion-tab">
+                                            <div class="btn-edit">
+                                                <i class="fa fa-edit"></i>
+                                            </div>
+                                            <div class="btn-toggle-accordion"></div>
+                                            <p><strong>Resumen</strong></p>
+                                        </div>
+                                        <div class="accordion-panel">
+
+                                            <div class="accordion-datum">
+                                                <h4>Ruta:</h4>
+                                                <p>Mexicali-Pantaco</p>
+                                            </div>
+                                            <div class="accordion-datum">
+                                                <h4>Origen:</h4>
+                                                <p>Mexicali Zona Metropolitana</p>
+                                            </div>
+                                            <div class="accordion-datum">
+                                                <h4>Destino:</h4>
+                                                <p>Pantaco CDMX</p>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="accordion-datum">
+                                                <h4>Fecha de recolección:</h4>
+                                                <p>7 enero 2019</p>
+                                            </div>
+                                            <div class="accordion-datum">
+                                                <h4>Horario:</h4>
+                                                <p>12:00 hrs</p>
+                                            </div>
+                                            <div class="accordion-datum">
+                                                <h4>Fecha de entrega:</h4>
+                                                <p>9 enero 2019</p>
+                                            </div>
+                                            <div class="accordion-datum">
+                                                <h4>Horario:</h4>
+                                                <p>12:00 hrs</p>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="accordion-datum">
+                                                <h4>Cantidad de contenedores:</h4>
+                                                <p>2 Dry 53'</p>
+                                                <p>3 HC 53'</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="accordion-content__item">
+                                        <div class="accordion-tab js-accordion-tab">
+                                            <div class="btn-toggle-accordion"></div>
+                                            <p><strong>Responsables</strong></p>
+                                        </div>
+                                        <div class="accordion-panel">
+                                            <div class="accordion-datum">
+                                                <div class="btn-edit-panel">
+                                                    <i class="fa fa-edit"></i>
+                                                </div>
+                                                <h4>Responsable de entrega:</h4>
+                                                <p>John Carter</p>
+                                                <p class="contact">mail@mail.com</p>
+                                                <p class="contact">677 1234</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>

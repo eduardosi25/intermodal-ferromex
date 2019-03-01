@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>left-and-right-arrows</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.3-Método-de-pago" transform="translate(-288.000000, -427.000000)" fill="#939BA1" fill-rule="nonzero">
+            <g id="Content" transform="translate(249.000000, 169.000000)">
+                <g transform="translate(0.000000, 138.000000)" id="li">
+                    <g transform="translate(1.000000, 114.250000)">
+                        <g id="left-and-right-arrows" transform="translate(38.000000, 6.000000)">
+                            <path d="M10.9902006,7.16396333 L15.9137305,12.0819168 L10.9902006,17 L10.0510437,16.061882 L13.3713978,12.7453308 L0,12.7453308 L0,11.4186325 L13.3713978,11.4186325 L10.0510437,8.10195161 L10.9902006,7.16396333 Z M3.66171224,4.25466919 L6.98206633,0.938117973 L6.0429094,0 L1.11950936,4.9180832 L6.0429094,9.83603667 L6.98206633,8.89804839 L3.66171224,5.58136748 L17,5.58136748 L17,4.25466919 L3.66171224,4.25466919 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

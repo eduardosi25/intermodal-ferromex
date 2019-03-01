@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-alert</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.0.2-Compra-validada" transform="translate(-680.000000, -258.000000)">
+            <g id="Lightbox">
+                <g id="Modal-inner" transform="translate(330.000000, 196.000000)">
+                    <g id="Icon-alert" transform="translate(350.000000, 62.000000)">
+                        <g id="checked">
+                            <circle id="Oval" fill="#BA8748" fill-rule="nonzero" cx="40" cy="40" r="40"></circle>
+                            <g id="danger-(1)" transform="translate(36.000000, 23.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                <path d="M4.30189525,0 C2.32254508,0 0.777777778,1.06531121 0.777777778,2.95387437 C0.777777778,8.71601179 1.45353542,16.9961291 1.45353542,22.758423 C1.45369152,24.2594722 2.75728406,24.8888889 4.30205135,24.8888889 C5.46062683,24.8888889 7.10202013,24.2594722 7.10202013,22.758423 C7.10202013,16.9962856 7.77777778,8.71616836 7.77777778,2.95387437 C7.77777778,1.06546778 6.18477553,0 4.30189525,0 Z" id="Shape"></path>
+                                <path d="M3.52285551,28 C1.50994315,28 0,29.5908289 0,31.5 C0,33.3636096 1.50979522,35 3.52285551,35 C5.3986348,35 7,33.3636096 7,31.5 C7,29.5908289 5.39848687,28 3.52285551,28 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,85 @@
+/* ------------------------------------------------------------
+    CARDS
+------------------------------------------------------------ */
+.widget {
+    background-color: @cWhite;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+
+    &.widget-tile {
+        padding: 24px 20px;
+        margin-bottom: 25px;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .chart {
+        width: 85px;
+        min-height: 45px;
+        padding: 5px 0;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .data-info {
+        display: table-cell;
+        text-align: right;
+
+        .desc {
+            line-height: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+
+.cards-panels {
+    width: 100%;
+    display: inline-block;
+}
+.card {
+    border: 0;
+
+    &.card-border {
+        border: 1px solid @cGray3;
+    }
+
+    &.card-border-color {
+        border-top: 3px solid @cGray3;
+    }
+}
+
+.card-header {
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1.5384rem;
+    margin: 0 1.538rem;
+    border-bottom-width: 0;
+    border-radius: 3px 3px 0 0;
+    background-color: transparent;
+
+    .tools {
+        float: right;
+        font-size: 0;
+
+        .icon-tools {
+            display: inline-block;
+            font-size: 1.538rem;
+            line-height: 25px;
+            vertical-align: middle;
+            cursor: pointer;
+            color: #bababa;
+            min-width: 1.538rem;
+            text-align: center;
+        }
+    }
+}
+
+.card-default {
+    border: 1px solid @cWhite;
+}

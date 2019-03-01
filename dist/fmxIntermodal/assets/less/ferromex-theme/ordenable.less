@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------
+    ORDENABLE
+------------------------------------------------------------ */
+.order-list {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+//Default
+.sortable {
+    list-style-type: none;
+    margin: 0; padding: 0;
+    width: 100%;
+}
+
+.sortable li {
+    background: @cWhite;
+    padding: 0.4em;
+    padding-left: 1.5em;
+    cursor: pointer;
+    border: 1px solid @cGray6;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(240,240,240,1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(240,240,240,1);
+    box-shadow: 0px 0px 3px 0px rgba(240,240,240,1);
+}
+
+.sortable li span {
+    position: absolute;
+    margin-left: -1.3em;
+}
+

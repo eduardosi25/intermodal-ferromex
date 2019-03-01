@@ -1,0 +1,334 @@
+/* ------------------------------------------------------------
+    ALERTS
+------------------------------------------------------------ */
+.card {
+    border-top: 1px solid @cGray6;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.alert {
+    padding: 10px;
+    &.notification-success { 
+        background: @cGreen4;
+        border: 1px solid @cGreen4;
+    }
+
+    &.notification-info {
+        color: @cBlue6;
+        background: @cBlue5;
+        border: 1px solid @cBlue5;
+    }
+
+    &.notification-warning {
+        background: @cYellow3;
+        border: 1px solid @cYellow3;
+    }
+
+    &.notification-danger {
+        background: @cRed6;
+        border: 1px solid @cRed6;
+    }
+
+    .notification-close {
+        color: @cGray7;
+        font-size: 20px;
+    }
+    &.alert-default {
+        color: @cWhite;
+        border-radius: 0;
+    }
+
+    &.alert-green {
+        background-color: @cGreen2;
+        border-color: @cGreen2;
+    }
+
+    &.alert-blue {
+        background-color: @cBlue2;
+        border-color: @cBlue2;
+    }
+
+    &.alert-yellow {
+        background-color: @cYellow;
+        border-color: @cYellow;
+    }
+
+    &.alert-red {
+        background-color: @cRed4;
+        border-color: @cRed4;
+    }
+
+    //Modificador
+    .icon {
+        width: 55px;
+        font-size: 1.846rem;
+        vertical-align: middle;
+        line-height: 22px;
+        display: table-cell;
+        padding-top: 1px;
+        text-align: center;
+
+        .icon-all {
+            font-size: 15px;
+            color: @cWhite;
+        }
+    }
+
+    .message {
+        display: table-cell;
+        padding: 10px 0 10px 10px;
+        border-left-width: 0;
+    }
+
+    &.alert-dismissible {
+        .close {
+            position: absolute;
+            font-size: 1.538rem;
+            right: 1.385rem;
+            text-shadow: none;
+            opacity: .2;
+            color: @cBlue3;
+            .centerVertical;
+        }
+    }
+
+    &.alert-contrast {
+        padding: 0;
+        position: relative;
+
+        .icon {
+            display: table-cell;
+            width: 60px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: rgba(255,255,255,.08);
+        }
+
+        .message {
+            display: table-cell;
+            padding: 1.385rem;
+
+            &.text-alert {
+                padding: 20px 0 20px 10px;
+            }
+        }
+
+        &.alert-dismissible {
+            padding-right: 4rem;
+        }
+    }
+
+    &.alert-icon {
+        position: relative;
+        background-color: @cWhite;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+
+        .icon {
+            position: relative;
+            display: table-cell;
+            width: 60px;
+            vertical-align: middle;
+
+            &.icon-green {
+                background-color: @cGreen2;
+
+                //Modificador
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -10px;
+                    margin-top: -2px;
+                    border-left: 11px solid @cWhite;
+                    border-bottom: 11px solid transparent;
+                    border-top: 11px solid transparent;
+                    border-left-color: @cGreen2;
+                }
+            }
+
+            &.icon-blue {
+                background-color: @cBlue2;
+
+                //Modificador
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -10px;
+                    margin-top: -2px;
+                    border-left: 11px solid @cWhite;
+                    border-bottom: 11px solid transparent;
+                    border-top: 11px solid transparent;
+                    border-left-color: @cBlue2;
+                }
+            }
+
+            &.icon-yellow {
+                background-color: @cYellow;
+
+                //Modificador
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -10px;
+                    margin-top: -2px;
+                    border-left: 11px solid @cWhite;
+                    border-bottom: 11px solid transparent;
+                    border-top: 11px solid transparent;
+                    border-left-color: @cYellow;
+                }
+            }
+
+            &.icon-red {
+                background-color: @cRed4;
+
+                //Modificador
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -10px;
+                    margin-top: -2px;
+                    border-left: 11px solid @cWhite;
+                    border-bottom: 11px solid transparent;
+                    border-top: 11px solid transparent;
+                    border-left-color: @cRed4;
+                }
+            }
+        }
+
+        .message {
+            display: table-cell;
+            border: 1px solid #d4d4d4;
+            border-left-width: 0;
+            width: 100%;
+            color: @cGray5;
+            padding: 20px 0 20px 20px;
+        }
+
+        &.alert-icon-border__green {
+            &.alert-success {
+                .message {
+                    border-color: @cGreen2;
+                }
+            }
+        }
+
+        &.alert-icon-border__blue {
+            &.alert-success {
+                .message {
+                    border-color: @cBlue2;
+                }
+            }
+        }
+
+        &.alert-icon-border__yellow {
+            &.alert-success {
+                .message {
+                    border-color: @cYellow;
+                }
+            }
+        }
+
+        &.alert-icon-border__red {
+            &.alert-success {
+                .message {
+                    border-color: @cRed4;
+                }
+            }
+        }
+
+        &.alert-icon-colored {
+            .icon {
+                &.icon-green {
+                    background-color: @cGray10;
+
+                    &::after {
+                        border-left-color: @cGray10;
+                    }
+
+                    .icon-item__G {
+                        color: @cGreen2;
+                    }
+
+                    &.icon-back__white {
+                        background-color: @cWhite;
+
+                        &::after {
+                            border-left-color: @cWhite;
+                        }
+                    }
+                }
+                &.icon-blue {
+                    background-color: @cGray10;
+
+                    &::after {
+                        border-left-color: @cGray10;
+                    }
+
+                    .icon-item__B {
+                        color: @cBlue2;
+                    }
+
+                    &.icon-back__white {
+                        background-color: @cWhite;
+
+                        &::after {
+                            border-left-color: @cWhite;
+                        }
+                    }
+                }
+                &.icon-yellow {
+                    background-color: @cGray10;
+
+                    &::after {
+                        border-left-color: @cGray10;
+                    }
+
+                    .icon-item__Y {
+                        color: @cYellow;
+                    }
+
+                    &.icon-back__white {
+                        background-color: @cWhite;
+
+                        &::after {
+                            border-left-color: @cWhite;
+                        }
+                    }
+                }
+                &.icon-red {
+                    background-color: @cGray10;
+
+                    &::after {
+                        border-left-color: @cGray10;
+                    }
+
+                    .icon-item__R {
+                        color: @cRed4;
+                    }
+
+                    &.icon-back__white {
+                        background-color: @cWhite;
+
+                        &::after {
+                            border-left-color: @cWhite;
+                        }
+                    }
+                }
+            }
+
+            &.alert-simple__borde {
+                border: 1px solid @cGray8;
+
+                .message {
+                    border: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@import 'https://code.highcharts.com/css/highcharts.css';
+/* ------------------------------------------------------------
+    FONTS
+------------------------------------------------------------ */
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans-Regular.svg') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../fonts/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans-Bold.svg') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+/* ------------------------------------------------------------
+    COLORS
+------------------------------------------------------------ */
+/* ------------------------------------------------------------
+    DEGRADADO HEADER
+------------------------------------------------------------ */
+.bg-dark__1 {
+  background: #127091;
+  background: -moz-linear-gradient(left, #127091 0%, #455560 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #127091), color-stop(100%, #455560));
+  background: -webkit-linear-gradient(left, #127091 0%, #455560 100%);
+  background: -o-linear-gradient(left, #127091 0%, #455560 100%);
+  background: -ms-linear-gradient(left, #127091 0%, #455560 100%);
+  background: linear-gradient(to right, #127091 0%, #455560 100%);
+}
+.bg-dark__2 {
+  background: -moz-linear-gradient(left, #424a52 0%, #455560 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #424a52), color-stop(100%, #455560));
+  background: -webkit-linear-gradient(left, #424a52 0%, #455560 100%);
+  background: -o-linear-gradient(left, #424a52 0%, #455560 100%);
+  background: -ms-linear-gradient(left, #424a52 0%, #455560 100%);
+  background: linear-gradient(to right, #424a52 0%, #455560 100%);
+}
+.bg-dark__3 {
+  background: #2e3840;
+  background: -moz-linear-gradient(left, #2e3840 0%, #455560 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #2e3840), color-stop(100%, #455560));
+  background: -webkit-linear-gradient(left, #2e3840 0%, #455560 100%);
+  background: -o-linear-gradient(left, #2e3840 0%, #455560 100%);
+  background: -ms-linear-gradient(left, #2e3840 0%, #455560 100%);
+  background: linear-gradient(to right, #2e3840 0%, #455560 100%);
+}
+/* ------------------------------------------------------------
+    COLUMNAS
+------------------------------------------------------------ */
+@media (min-width: 576px) {
+  .card-b {
+    margin-bottom: 30px;
+  }
+  .card-columns1 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 1;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+  .card-columns2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+  .card-columns3 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+  .card-columns .card,
+  .card-columns1 .card,
+  .card-columns2 .card {
+    display: inline-block;
+    width: 100%;
+  }
+}

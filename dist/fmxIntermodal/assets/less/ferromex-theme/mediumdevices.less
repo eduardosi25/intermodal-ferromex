@@ -1,0 +1,173 @@
+/* ------------------------------------------------------------
+MEDIUM DEVICES
+------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: @smallWidth;
+    }
+
+    /* ------------------------------
+                ALERTAS
+    ------------------------------ */
+    body .module-inside {
+        .card {
+            .alert {
+                padding-right: 4rem !important;
+
+                &.alert-icon {
+                    padding-right: 0 !important;
+
+                    .message {
+                        padding: 20px 34px 20px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ------------------------------
+                TABLAS
+    ------------------------------ */
+    body .content-table {
+        .table-responsive {
+            border: 0;
+        }
+
+        .dataTables_length,
+        .dataTables_filter,
+        .dataTables_info,
+        .dataTables_paginate {
+            width: 100%;
+        }
+    }
+
+    /* ------------------------------
+                GRÁFICAS
+    ------------------------------ */
+    #container {
+      min-width: 310px;
+      max-width: 800px;
+      height: 400px;
+      margin: 0 auto;
+
+      &.chart-auto {
+          min-width: 110px !important;
+          max-width: 400px !important;
+      }
+    }
+    .chart {
+        min-width: 320px;
+        max-width: 800px;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    /* ------------------------------
+                ERROR
+    ------------------------------ */
+    body .section {
+        .error {
+            .big-title {
+                font-size: 60px;
+            }
+
+            .text {
+                &.text-big {
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+
+    /* ------------------------------
+                WIZARD
+    ------------------------------ */
+    .fuelux .wizard > .actions {
+        position: relative !important;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 920px) {
+    .background-white {
+        .chart-auto {
+            .highcharts-container {
+                width: auto !important;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: @mediumWidth;
+    }
+
+    .login {
+        .login-image {
+            .login-content {
+                padding: 200px 20px !important;
+            }
+        }
+    }
+
+    .nav-header {
+        .title1 {
+            font-size: 25px;
+        }
+    }
+
+    .content-input {
+        .content-input__list {
+            .content-input__item {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+
+                &:nth-child(6),
+                &:nth-child(7) {
+                    width: 50%;
+                    margin-top: 20px;
+                }
+
+                .buttons__link {
+                    position: relative;
+                    display: inline-block;
+                    .centerHorizontal;
+                }
+            }
+        }
+    }
+
+    .form-basic {
+        .col-space {
+            padding: 0;
+            &:first-of-type {
+                padding: 0;
+            }
+            &:last-of-type {
+                padding: 0;
+            }
+        }
+    }
+
+    .form-item {
+        .text-small__left {
+            text-align: left !important;
+        }
+    }
+
+
+
+}

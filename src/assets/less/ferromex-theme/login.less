@@ -1,0 +1,130 @@
+/* ------------------------------------------------------------
+    LOGIN
+------------------------------------------------------------ */
+.login {
+    height: auto;
+    width: 100%;
+    background-color: #f7f7f7;
+    .login-body {
+        height: 100vh;
+        //width: 100vw; usar para todo el contenido
+        width: 100%;
+        position: relative;
+        .container {
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        .image__figure {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+
+            .login-image__item {
+                position: relative;
+                width: 270px;
+                height: auto;
+                .centerHorizontal
+            }
+        }
+
+        .login-content {
+            .center;
+            position: absolute;
+
+            .login__background {
+                background: rgba(255, 255, 255, .7);
+                padding: 50px;
+                -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+
+                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.22)), color-stop(100%, rgba(255, 255, 255, 0.85)));
+                background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.85) 100%);
+                background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.85) 100%);
+                background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.85) 100%);
+                background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.92) 100%);
+            }
+        }
+    }
+
+    .form {
+        .form-item {
+            &.form-login {
+                label {
+                    display: block;
+                    font-weight: 500;
+                }
+                .form-control {
+                    width: 100%;
+                    display: inline-block;
+                }
+
+                .form-group {
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    .centerHorizontal
+                }
+            }
+        }
+
+    }
+
+    .link__forgot {
+        position: relative;
+        text-decoration: underline;
+        display: inline-block;
+        .centerHorizontal;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .btn-red {
+        font-size: 15px;
+        padding: 11px 15px;
+        text-transform: uppercase;
+        background-color: @cRed;
+        border: 1px solid @cRed;
+        border-radius: 0;
+
+        &:hover {
+            background-color: @cWhite;
+            border: 1px solid @cRed;
+            border-radius: 0;
+            color: @cRed;
+        }
+    }
+
+    .buttons__link--red {
+        width: 100%;
+        margin-top: 40px;
+        .btn-red {
+            position: relative;
+            display: inline-block;
+            .centerHorizontal
+        }
+    }
+}
+.login__back-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+
+.valid-feedback {
+    font-size: 12px !important;
+}
+
+.invalid-feedback {
+    &.invalid-password {
+        font-size: 12px;
+    }
+}

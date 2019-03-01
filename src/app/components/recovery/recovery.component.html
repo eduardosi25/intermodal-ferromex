@@ -1,0 +1,41 @@
+<main class="content-box">
+    <section class="module">
+        <div class="container">
+            <div class="form-basic  ">
+                <div class="title3 ">
+                    <h3 class="center-text">Recuperación de contraseña</h3>
+                </div>
+                <form class="form-item center-content log-form" #registerForm="ngForm" (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1 text">Correo electrónico</label>
+                        <input type="email" name="email" #recover="ngModel" [(ngModel)]="Email.email" class="form-control is-invalid is-invalid__1" placeholder="Ingresa un correo electrónico válido" required pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
+
+                        <div class="errorRegister" *ngIf="!recover.valid && recover.touched">
+                            <div class="errorRegister" *ngIf="!!recover.errors.required">el email es requerido</div>
+                            <div class="errorRegister" *ngIf="!!recover.hasError('pattern')">Verifica el formato del email</div>
+                        </div>
+
+                    </div>
+                    <div class="form-group text-center">
+                        <p class="text">Tras validar tu usuario, enviaremos una nueva contraseña a tu correo electrónico</p>
+                    </div>
+                    <div class="alert alert-success" *ngIf="status == 'success'">
+                        Se te ha mandado un email a tu correo.
+                    </div>
+                    <div class="alert alert-danger" *ngIf="status == 'error'">
+                        {{userStatus}}
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" class="btn btn-default btn-red btn-xl btn-size1" data-toggle="modal">
+                    </div>
+                    <div class="form-bottom__links">
+                        <p class="center-text">Si ya tienes cuenta, <a class="default-link" [routerLink]="['/login']">Inicia sesión aquí</a></p>
+                        <p class="center-text">Si no tienes cuenta, <a class="default-link" [routerLink]="['/registro-usuarios']">Registrate aquí</a></p>
+                        <p class="center-text"><a [routerLink]="['/aviso-legal']" class="default-link">Aviso de privacidad</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>

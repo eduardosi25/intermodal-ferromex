@@ -1,0 +1,184 @@
+<main class="content-box mb-5">
+    <div class="container">
+        <div class="content-desktop">
+            <button type="button" class="btn-default btn-link mt-4 mb-4 mr-4">
+              <i class="icon fas fa-arrow-left fa-w-14 mr-2"></i>
+              Regresar
+          </button>
+        </div>
+
+        <div class="title3 align-center">
+            <h3>Seguimiento de carga <b>832-AA</b></h3>
+            <p>Mexicali-Pantaco - <b>Tren A202 - Contenedor 98A</b></p>
+
+            <div class="content-desktop">
+                <button type="button" class="btn-default btn-link btn-link--red light mt-4 mb-4 mr-4">
+                  <i class="icon fas fa-download fa-w-14 mr-2"></i>
+                  Descargar comprobante
+              </button>
+
+                <button type="button" class="btn-default btn-link btn-link--red light mt-4 mb-4 mr-4">
+                  <i class="icon far fa-file-pdf fa-w-14 mr-2"></i>
+                  Descargar factura
+              </button>
+            </div>
+        </div>
+
+        <!-- STEPPER SEGUIMIENTO -->
+        <div class="stepper stepper--seguimiento">
+            <div class="stepper__header">
+                <div id="step_1" class="step active">
+                    <h2 class="step__title">Recolección</h2>
+                    <div class="step__icon">
+                        <img src="assets/images/icons/step-recoleccion.svg" alt="Recolección">
+                    </div>
+                </div>
+                <div id="step_2" class="step active">
+                    <h2 class="step__title">En tránsito</h2>
+                    <div class="step__icon">
+                        <img src="assets/images/icons/step-en-transito.svg" alt="En tránsito">
+                    </div>
+                </div>
+                <div id="step_3" class="step active">
+                    <h2 class="step__title">Llegada</h2>
+                    <div class="step__icon">
+                        <img src="assets/images/icons/step-llegada.svg" alt="Llegada">
+                    </div>
+                </div>
+                <div id="step_4" class="step active current">
+                    <h2 class="step__title">En recepción</h2>
+                    <div class="step__icon">
+                        <img src="assets/images/icons/step-en-recepcion.svg" alt="En recepción">
+                    </div>
+                </div>
+                <div id="step_5" class="step">
+                    <h2 class="step__title">Cerrado</h2>
+                    <div class="step__icon">
+                        <img src="assets/images/icons/step-cerrado.svg" alt="Cerrado">
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="stepper__body">
+                <h3 class="step-title content-mobile">Estatus actual</h3>
+
+                <div id="content_1" class="step-content active">
+                    <ul class="step-list">
+                        <li class="step-list__item">
+                            <i class="icon fas fa-check-circle"></i>
+                            <div class="text">
+                                <h3>1. Pedido confirmado</h3>
+                                <p>2 Dic 18 | 13:00hrs</p>
+                            </div>
+                        </li>
+                        <li class="step-list__item">
+                            <i class="icon fas fa-check-circle"></i>
+                            <div class="text">
+                                <h3>2. Llegamos a recoger tu carga</h3>
+                                <p>2 Dic 18 | 14:00hrs</p>
+                            </div>
+                        </li>
+                        <li class="step-list__item">
+                            <i class="icon fas fa-check-circle"></i>
+                            <div class="text">
+                                <h3>3. Tu carga va a la terminal de origen</h3>
+                                <p>2 Dic 18 | 15:00hrs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="content_2" class="step-content active">
+                    <ul class="step-list">
+                        <li class="step-list__item">
+                            <i class="icon fas fa-check-circle"></i>
+                            <div class="text">
+                                <h3>1. Pedido confirmado</h3>
+                                <p>2 Dic 18 | 13:00hrs</p>
+                            </div>
+                        </li>
+                        <li class="step-list__item">
+                            <i class="icon fas fa-check-circle"></i>
+                            <div class="text">
+                                <h3>2. Llegamos a recoger tu carga</h3>
+                                <p>2 Dic 18 | 14:00hrs</p>
+                            </div>
+                        </li>
+                        <li class="step-list__item">
+                            <i class="icon far fa-clock"></i>
+                            <div class="text">
+                                <h3>3. Tu carga va a la terminal de origen</h3>
+                                <p>2 Dic 18 | 15:00hrs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="content_3" class="step-content active">
+                    <ul class="step-list">
+                        <li class="step-list__item">
+                            <i class="icon fas fa-check-circle"></i>
+                            <div class="text">
+                                <h3>1. Tu carga llegó a la terminal de destino</h3>
+                                <p>14 Dic 18 | 8:00hrs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="content_4" class="step-content active current">
+                    <ul class="step-list">
+                        <li class="step-list__item">
+                            <i class="icon fas fa-check-circle"></i>
+                            <div class="text">
+                                <h3>1. Tu carga va a la terminal de destino</h3>
+                                <p>14 Dic 18 | 9:00hrs</p>
+                            </div>
+                        </li>
+                        <li class="step-list__item">
+                            <i class="icon fas fa-check-circle"></i>
+                            <div class="text">
+                                <h3>2. Tu carga ha llegado a la dirección de destino</h3>
+                                <p>14 Dic 18 | 9:00hrs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="content_5" class="step-content">
+                    <ul class="step-list">
+                        <li class="step-list__item">
+                            <i class="icon fas fa-check-circle"></i>
+                            <div class="text">
+                                <h3>1. Tu carga ha sido entregada</h3>
+                                <p>14 Dic 18 | 9:20hrs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="stepper__body__actions content-mobile">
+                    <button type="button" class="btn-default btn-link btn-back mt-4 mb-4 mr-4">
+                      <i class="icon fas fa-arrow-left fa-w-14 mr-2"></i>
+                      Regresar
+                  </button>
+
+                    <button type="button" class="btn-default btn-link btn-link--red light mt-4 mb-4 mr-4">
+                      <i class="icon fas fa-download fa-w-14 mr-2"></i>
+                      Descargar comprobante
+                  </button>
+
+                    <button type="button" class="btn-default btn-link btn-link--red light mt-4 mb-4 mr-4">
+                      <i class="icon far fa-file-pdf fa-w-14 mr-2"></i>
+                      Descargar factura
+                  </button>
+                </div>
+            </div>
+
+            <div class="stepper__footer align-center">
+                <p>Para dudas y problemas en tu pedido, comunicarse al <b>7281-1231</b></p>
+            </div>
+
+        </div>
+    </div>
+    <!-- /STEPPER SEGUIMIENTO -->
+</main>

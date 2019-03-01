@@ -1,0 +1,507 @@
+<main>
+    <section class="hero-content">
+        <div class="container">
+            <div class="row hero-title">
+                <div class="col-xs-12">
+                    <h2 class="hero-text text-center">Por tren es mejor</h2>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="video-box">
+            <video autoplay loop src="../../../assets/images/videos/background3.mp4" poster="../../../assets/images/imagenes/container-hero.jpg">
+              <source src="../../../assets/images/videos/background3.mp4" type="video/mp4">
+              <source src="../../../assets/images/videos/background3.webm" type="video/webm">
+              <source src="../../../assets/images/videos/background3.ogv" type="video/ogv">
+          </video>
+        </div>
+    </section>
+
+    <!-- STEPER -->
+    <section class="stepper-container fuelux">
+        <div id="steper" class="wizard wizard-ux">
+            <div class="steps-container">
+                <ul class="steps clearfix">
+                    <li data-step="1" class="text active">
+                        <span class="step-number">1</span>
+                        <span class="step-name">Cotiza</span>
+                        <span class="chevron"></span>
+                    </li>
+                    <li data-step="2" class="text">
+                        <span class="step-number">2</span>
+                        <span class="step-name">Registra y paga</span>
+                        <span class="chevron"></span>
+                    </li>
+                    <li data-step="3" class="text">
+                        <span class="step-number">3</span>
+                        <span class="step-name">Sigue</span>
+                        <span class="chevron"></span>
+                    </li>
+                    <li data-step="4" class="text">
+                        <span class="step-number">4</span>
+                        <span class="step-name">Recibe</span>
+                        <span class="chevron"></span>
+                    </li>
+                    <li data-step="5" class="text">
+                        <span class="step-number">5</span>
+                        <span class="step-name">Califica</span>
+                        <span class="chevron"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cot-tabs content-mobile clearfix">
+            <div class="tab-item col-xs-4 tab-route active" data-parent="#choice-route">Ruta</div>
+            <div class="tab-item col-xs-4 tab-container" data-parent="#choice-container">Contenedor</div>
+            <div class="tab-item col-xs-4 tab-services" data-parent="#choice-services">Servicios</div>
+        </div>
+    </section>
+    <!-- /STEPER -->
+
+    <section class="section quote bg-gray">
+        <div class="container form">
+            <!-- ACTIONS -->
+            <section class="actions">
+                <div class="container">
+                    <div class="row subtotal quote-results">
+                        <div class="subtotal__header">
+                            <h4 class="subtotal__label">Costo de tu cotización:</h4>
+                            <span class="subtotal__number">$15,873.20</span>
+                            <span class="subtotal__text">MXN +IVA</span>
+                        </div>
+                        <div class="subtotal__actions">
+                            <a href="#" class="btn btn-default btn-lg btn-red ">RESERVAR</a>
+                            <a href="#" class="btn btn-default btn-lg btn-brown">GUARDAR COTIZACIÓN</a>
+                            <a href="#" class="btn btn-link js-prevroute" data-target="#choice-route">
+                                <i class="btn-link__icon fas fa-angle-left"></i> Volver a cotizar
+                            </a>
+                        </div>
+                        <div class="subtotal__footer">
+                            <p class="terms-desk"><a [routerLink]="['/terminos-condiciones']">Ver términos y condiciones</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /ACTIONS -->
+
+            <div class="col-xs-12 resize-me">
+                <div class="tab-content mobile-tab choice-route" id="choice-route">
+                    <h2>Elige tu ruta</h2>
+                    <div class="row row-fields ">
+                        <div class="col col-xs-6">
+                            <span class="tren-select__label">Tipo de servicio</span>
+                            <label class="tren-select">
+                              <select class="tren-selected">
+                                  <option disabled="disabled" selected>Tipo de servicio</option>
+                                  <option>Ruta 1</option>
+                                  <option>Ruta 2</option>
+                              </select>
+                          </label>
+                        </div>
+                        <div class="col col-xs-6">
+                            <span class="tren-select__label">Ruta</span>
+                            <label class="tren-select">
+                              <select class="tren-selected">
+                                  <option disabled="disabled" selected>Ruta</option>
+                                  <option>Origen 1</option>
+                                  <option>Origen 2</option>
+                              </select>
+                          </label>
+                        </div>
+                        <div class="col col-xs-6">
+                            <span class="tren-select__label">Dirección de origen</span>
+                            <label class="tren-select">
+                              <select class="tren-selected">
+                                  <option disabled="disabled" selected>Dirección origen</option>
+                                  <option>Destino 1</option>
+                                  <option>Destino 2</option>
+                              </select>
+                          </label>
+                        </div>
+                        <div class="col col-xs-6">
+                            <span class="tren-select__label">Dirección destino</span>
+                            <label class="tren-select">
+                              <select class="tren-selected">
+                                  <option disabled="disabled" selected>Dirección destino</option>
+                                  <option>Destino 1</option>
+                                  <option>Destino 2</option>
+                              </select>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="col text-center btn-next-mobile content-mobile">
+                        <a href="#" class="btn btn-default btn-lg  btn-red js-show-target" data-target="#choice-container">Continuar</a>
+                    </div>
+                </div>
+
+                <div class="tab-content mobile-tab choice-container" id="choice-container">
+                    <h2>Elige tu contenedor</h2>
+                    <div class="row row-fields ">
+                        <div class="col col-xs-12">
+                            <span class="tren-select__label">Tipo de contenedor</span>
+                            <label class="tren-select">
+                              <select class="tren-selected">
+                                  <option disabled="disabled" selected>Tipo de contenedor</option>
+                                  <option>Contenedor 1</option>
+                                  <option>Contenedor 2</option>
+                              </select>
+                          </label>
+                            <a href="#">
+                                <small class="form-text text-muted align-right">Ver detalles contenedores</small>
+                            </a>
+                        </div>
+                        <div class="col col-xs-12">
+                            <span class="tren-select__label">Cantidad de contenedores</span>
+                            <label class="tren-select">
+                              <select class="tren-selected">
+                                  <option disabled="disabled" selected>Cantidad de contenedores</option>
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                  <option>6</option>
+                              </select>
+                          </label>
+                        </div>
+                        <div class="col col-xs-12 d-flex align-items-center">
+                            <label for="todos" class="be-checkbox custom-control custom-checkbox">
+                              <input type="checkbox" id="todos" class="custom-control-input">
+                              <span class="custom-control-label">Mismo <b>horario</b> y <b>día</b> para todos los contenedores</span>
+                          </label>
+                        </div>
+                    </div>
+
+                    <h2>Elige una fecha</h2>
+                    <div class="row row-fields">
+                        <div class="col-md-3 col-xs-6">
+                            <div class="input-group date">
+                                <input type="text" class="form-control" value="Fecha recolección">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <span class="tren-select__label">Horario</span>
+                            <label class="tren-select">
+                              <select class="tren-selected">
+                                  <option disabled="disabled" selected>Horario</option>
+                                  <option>Horario 1</option>
+                                  <option>Horario 2</option>
+                              </select>
+                          </label>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <div class="input-group date">
+                                <input type="text" class="form-control" value="Fecha entrega">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <span class="tren-select__label">Horario</span>
+                            <label class="tren-select">
+                              <select class="tren-selected">
+                                  <option disabled="disabled" selected>Horario</option>
+                                  <option>Horario 1</option>
+                                  <option>Horario 2</option>
+                              </select>
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col text-center btn-next-mobile content-mobile">
+                        <a href="#" class="btn btn-default btn-lg  btn-brown js-show-target" data-target="#choice-route">Regresar</a>
+                        <a href="#" class="btn btn-default btn-lg  btn-red js-show-target" data-target="#choice-services" data-slick="reset">Continuar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SERVICIOS -->
+        <div class="services tab-content mobile-tab choice-services" id="choice-services">
+            <div class="container">
+                <div class="accordion resize-me">
+                    <button class="btn btn--toggle collapsed" data-toggle="collapse" data-target="#service1" aria-expanded="false" aria-controls="service1">
+                      Elige tus servicios de contenedor 1
+                      <i class="fas fa-angle-down ml-3"></i>
+                  </button>
+
+                    <div class="collapse service container show" id="service1" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="row">
+                            <div class="col-12 d-flex service__header">
+                                <h3 class="justify-self-start">Contenedor 1</h3>
+                                <a class="justify-self-end" href="#">Ver detalles servicios</a>
+                            </div>
+                        </div>
+
+                        <div class="row slider slider--services-mobile js-slider-services-mobile">
+                            <div class="col-4">
+                                <div class="option">
+                                    <img class="option-icon" src="../../../assets/images/icons/fumigacion.svg" alt="Fumigación">
+                                    <p class="option-text">
+                                        Fumigación
+                                        <i class="fa fa-info-circle"></i>
+                                    </p>
+                                    <button class="btn--option btn-default btn-xs" type="button">
+                                      <i class="fas fa-plus-circle"></i>
+                                      Agregar
+                                  </button>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="col-3">
+                                <div class="option">
+                                    <img class="option-icon" src="../../../assets/images/icons/seguro.svg" alt="Fumigación">
+                                    <p class="option-text">
+                                        Seguro
+                                        <i class="fa fa-info-circle"></i>
+                                    </p>
+                                    <button class="btn--option btn-default btn-xs" data-toggle="modal" data-target="#seguro" type="button">
+                                      <i class="fas fa-plus-circle"></i>
+                                      Agregar
+                                  </button>
+                                </div>
+                            </div>
+                        -->
+                            <div class="col-4">
+                                <div class="option">
+                                    <img class="option-icon" src="../../../assets/images/icons/sistema.svg" alt="Fumigación">
+                                    <p class="option-text">
+                                        Sistemas de sujeción de carga
+                                        <i class="fa fa-info-circle"></i>
+                                    </p>
+                                    <button class="btn--option btn-default btn-xs" type="button">
+                                      <i class="fas fa-plus-circle"></i>
+                                      Agregar
+                                  </button>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="option">
+                                    <img class="option-icon" src="../../../assets/images/icons/asesoria.svg" alt="Fumigación">
+                                    <p class="option-text">
+                                        Asesoría en preparación de embarques (servicio gratuito)
+                                        <i class="fa fa-info-circle"></i>
+                                    </p>
+                                    <button class="btn--option btn-default btn-xs" type="button">
+                                      <i class="fas fa-plus-circle"></i>
+                                      Agregar
+                                  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col text-center btn-next-mobile content-mobile">
+                <a href="#" class="btn btn-default btn-lg  btn-brown js-show-target" data-target="#choice-container">Regresar</a>
+                <a href="#" class="btn btn-default btn-lg  btn-red js-mobile-cotizar">Cotizar</a>
+            </div>
+        </div>
+        <!-- /SERVICIOS -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col text-right col-cotizar-desk justify-content-center">
+                    <a href="#" class="btn btn-default btn-lg btn-red  btn-size1 js-desk-cotizar">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section our-process white-back">
+        <div class="container">
+            <div class="title-h3 align-center">
+                <h3>Nuestro proceso</h3>
+            </div>
+            <div class="row process-linea">
+                <div class="col-md featured-txt">
+                    <div class="step-icon">
+                        <img src="../../../assets/images/icons/icon-hand.svg">
+                        <div class="step-number">1</div>
+                    </div>
+                    <div class="step-text">
+                        <h3>Cotiza</h3>
+                        <p>Calcula tu pedido con nuestra calculadora</p>
+                    </div>
+                </div>
+                <div class="col-md featured-txt">
+                    <div class="step-icon">
+                        <img src="../../../assets/images/icons/icon-person-computer.svg">
+                        <div class="step-number">2</div>
+                    </div>
+                    <div class="step-text">
+                        <h3>Registra y paga</h3>
+                        <p>Registra tu carga y forma de pago</p>
+                    </div>
+                </div>
+                <div class="col-md featured-txt">
+                    <div class="step-icon">
+                        <img src="../../../assets/images/icons/receipt.svg">
+                        <div class="step-number">3</div>
+                    </div>
+                    <div class="step-text">
+                        <h3>Sigue</h3>
+                        <p>Sigue el status y los eventos de tu carga de origen a destino</p>
+                    </div>
+                </div>
+                <div class="col-md featured-txt">
+                    <div class="step-icon">
+                        <img src="../../../assets/images/icons/icon-credit-card.svg">
+                        <div class="step-number">4</div>
+                    </div>
+                    <div class="step-text">
+                        <h3>Recibe</h3>
+                        <p>Recibe tu carga</p>
+                    </div>
+                </div>
+                <div class="col-md featured-txt">
+                    <div class="step-icon">
+                        <img src="../../../assets/images/icons/checkmark.svg">
+                        <div class="step-number">5</div>
+                    </div>
+                    <div class="step-text">
+                        <h3>Califica</h3>
+                        <p>Califica nuestro servicio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section know-container gray-back">
+        <div class="container">
+            <div class="title-h3 align-left">
+                <h3>Conoce tu contenedor</h3>
+            </div>
+            <div class="container-info">
+                <div class="container-info__image">
+                    <div class="caption">
+                        <h4>Capacidad máxima</h4>
+                        <h3> 22 toneladas</h3>
+                        <h4> +4 toneladas de tara o caja</h4>
+                    </div>
+                    <figure>
+                        <img src="../../../assets/images/imagenes/container.png" />
+                    </figure>
+                </div>
+                <div class="container-info__text">
+                    <p>Capacidad máxima: 22 toneladas + 4 toneladas de tara o caja.</p>
+                </div>
+            </div>
+            <div class="title-h4">
+                <h4>Reglas generales</h4>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-content__item">
+                    <div class="accordion-tab js-accordion-tab">
+                        <p><strong>1. Inspección de tu contenedor</strong> </p>
+                    </div>
+                    <div class="accordion-panel">
+                        <p><strong> A.</strong> Verifica que tu contenedor cumpla con los requerimientos necesarios para llevar tu carga antes de tu compra. Puedes apoyarte de servicio Asesoría técnica de Ferromex Intermodal sin costo. </p>
+                        <p><strong>B.</strong> Si tu carga no cumple con las condiciones necesarias para la carga, se rechazará tu servicio y se harán los cargos correspondientes de las maniobras. </p>
+                        <p><strong>C.</strong> Si tu contenedor llega con filtraciones de luz, agua, daños o basura. Estás en tu derecho de rechazar el servicio. </p>
+                        <p><strong>D.</strong> Si el contenedor proporcionado NO es el apropiado para ser cargado y decides cargarlo, serás el responsable de preparar adecuadamente el contenedor antes de ser cargado (Tapar agujeros, filtraciones, limpieza,
+                            etcétera). </p>
+                    </div>
+                </div>
+                <div class="accordion-content__item">
+                    <div class="accordion-tab js-accordion-tab">
+                        <p><strong>2. Planificación de la Carga</strong></p>
+                    </div>
+                    <div class="accordion-panel">
+                        <p><strong> A.</strong> Planifica tu maniobra de carga para evitar daños a la carga y al equipo. Carga previamente dañada no deberá ser cargada. </p>
+                        <p><strong>B.</strong> Planifica tu maniobra de carga de tal forma que los espacios vacíos en sentido transversal se reduzcan al mínimo. Utiliza materiales apropiados de anclaje, sujeción y relleno para mantener la alineación vertical
+                            y evitar el movimiento transversal. </p>
+                        <p><strong>C.</strong> Asegura y sujeta las hileras incompletas de carga para evitar el movimiento. </p>
+                        <p><strong>D.</strong> Llena el espacio longitudinal con carga, material aprobado de relleno, o fije y sujete la carga en forma adecuada. No utilices material de relleno hueco o pallets como mamparas o particiones. </p>
+                        <p><strong>E.</strong> El peso debe distribuirse uniformemente de un lado a otro y de un extremo al otro en el interior del remolque o contenedor. </p>
+                        <p>Puedes apoyarte en este tutorial: <a href="#">Prepara tu carga</a></p>
+                    </div>
+                </div>
+                <div class="accordion-content__item">
+                    <div class="accordion-tab js-accordion-tab">
+                        <p><strong>3. Pesos Máximos y Distribución del Peso</strong></p>
+                    </div>
+                    <div class="accordion-panel">
+                        <p><strong> A.</strong> El peso de la carga NO DEBE de exceder el límite indicado en la placa del fabricante (26 toneladas). </p>
+                        <p><strong>B.</strong> El peso de la carga en los remolques o contenedores debe estar distribuido uniformemente tanto transversal como longitudinalmente y el peso combinado de la carga y el remolque o el contenedor, debe cumplir con
+                            toda la reglamentación federal, estatal, provincial y local, así como los requerimientos del servicio de transporte utilizado en el punto de origen y hasta el punto de destino. Es motivo de rechazo de tu carga el no cumplir
+                            con lo anterior y se cargarán los gastos de operación.</p>
+                    </div>
+                </div>
+                <div class="accordion-content__item">
+                    <div class="accordion-tab js-accordion-tab">
+                        <p><strong>4. Aseguramiento</strong></p>
+                    </div>
+                    <div class="accordion-panel">
+                        <p><strong> A.</strong> Asegura la carga para evitar el movimiento lateral y longitudinal. </p>
+                        <p><strong>B.</strong> Llena los espacios vacíos y aplica los dispositivos de fijación y sujeción (que vienen dentro de tu contenedor) para mantener una distribución longitudinal y transversal de la carga mientras está en tránsito
+                            para evitar que la carga dañe las puertas, la sección frontal, las paredes y para evitar que se caiga al abrir las puertas. </p>
+                        <p><strong> C.</strong> Usa madera sólida de buena calidad y sin defectos que menoscaben su resistencia o impidan que sea clavada adecuadamente. Si no cuentas con ellas puedes solicitar el servicio de sujeción de Ferromex Intermodal.
+                        </p>
+                        <p><strong> D.</strong> Utiliza el número y tamaño adecuado de clavos en el armado de los dispositivos de fijado y sujeción para no perforar el piso y paredes del contenedor. De lo contrario cualquier daño al piso y paredes representará
+                            un cargo extra. </p>
+                        <p><strong> E.</strong> Las ataduras y correas utilizadas para asegurar la carga deben tener la resistencia adecuada, ser en número suficiente y aplicarse correctamente con el fin de asegurar la carga e impedir su movimiento transversal
+                            o longitudinal. </p>
+                        <p>La carga debe estar firmemente inmovilizada dentro del Contenedor mediante estructuras de resistencia adecuada, materiales de estiba o bolsas de aire, puntales, amarres o una combinación de cualquiera de estos. Esto evitará que
+                            la carga se derrame, desparrame, esparza o caiga, así como que se desplace dentro del Contenedor a tal grado que afecte adversamente la estabilidad o maniobrabilidad del mismo sobre el vehículo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section back-module">
+        <div class="container">
+            <div class="video-simple">
+                <div class="js-play-video hero-image__video">
+                    <div class="video__button play-button"></div>
+                    <figure class="image js-hero-image">
+                        <img src="../../../assets/images/imagenes/video-cover.jpg">
+                    </figure>
+                    <video loop class="video js-video" controls>
+                      <source src="../../../assets/video/video.webm" type="video/webm">
+                      <source src="../../../assets/video/video.ogv" type="video/ogg">
+                  </video>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modalsize-3" role="document">
+        <div class="modal-content pad-mod">
+            <div class="modal-header row">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="carouselExampleControls2" class="carousel slide carousel-simple" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-simple__item active">
+                        <img class="d-block contenedor" src="../../../assets/images/imagenes/container-data.jpg" data-contenedor="First contenedor" />
+                    </div>
+                    <div class="carousel-item carousel-simple__item">
+                        <img class="d-block contenedor" src="../../../assets/images/imagenes/container-data.jpg" data-contenedor="Second contenedor" />
+                    </div>
+                    <div class="carousel-item carousel-simple__item">
+                        <img class="d-block contenedor" src="../../../assets/images/imagenes/container-data.jpg" data-contenedor="Third contenedor" />
+                    </div>
+                </div>
+                <a class="carousel-btn carousel-control-prev2" href="#carouselExampleControls2" role="button" data-slide="prev">
+                </a>
+                <a class="carousel-btn carousel-control-next2" href="#carouselExampleControls2" role="button" data-slide="next">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

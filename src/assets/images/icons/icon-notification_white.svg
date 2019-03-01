@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="14px" viewBox="0 0 13 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7.-Sigue-tu-carga---LOGIN-SIN-PAGAR" transform="translate(-1204.000000, -34.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group">
+                <g id="Header">
+                    <g id="button-module" transform="translate(1044.000000, 27.000000)">
+                        <g id="notification" transform="translate(160.000000, 4.000000)">
+                            <path d="M11.3750238,14.4545455 L11.3750238,10.212108 C11.3750238,7.60301705 10.046585,5.42665341 7.71877023,4.84967045 L7.71877023,4.27272727 C7.71877023,3.56847159 7.1744074,3 6.50001904,3 C5.82563069,3 5.28126785,3.56847159 5.28126785,4.27272727 L5.28126785,4.84971023 C2.95345308,5.42669318 1.62501428,7.60305682 1.62501428,10.2121477 L1.62501428,14.4545455 L0,16.1515284 L0,17 L13,17 L13,16.1515284 L11.3750238,14.4545455 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

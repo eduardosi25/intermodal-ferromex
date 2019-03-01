@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.0.1-Compra-validada" transform="translate(-680.000000, -318.000000)">
+            <g id="Lightbox">
+                <g id="Modal-inner" transform="translate(410.000000, 256.000000)">
+                    <g id="Icon-checked" transform="translate(270.000000, 62.000000)">
+                        <g id="checked">
+                            <circle id="Oval" fill="#51B261" fill-rule="nonzero" cx="40" cy="40" r="40"></circle>
+                            <path d="M25.1245421,41.6666667 C24.8827839,41.4285714 24.7619048,41.0714286 24.7619048,40.8333333 C24.7619048,40.5952381 24.8827839,40.2380952 25.1245421,40 L26.8168498,38.3333333 C27.3003663,37.8571429 28.025641,37.8571429 28.5091575,38.3333333 L28.6300366,38.452381 L35.2783883,45.4761905 C35.5201465,45.7142857 35.8827839,45.7142857 36.1245421,45.4761905 L52.3223443,28.9285714 L52.4432234,28.9285714 C52.9267399,28.452381 53.6520147,28.452381 54.1355311,28.9285714 L55.8278388,30.5952381 C56.3113553,31.0714286 56.3113553,31.7857143 55.8278388,32.2619048 L36.4871795,52.0238095 C36.2454212,52.2619048 36.003663,52.3809524 35.6410256,52.3809524 C35.2783883,52.3809524 35.03663,52.2619048 34.7948718,52.0238095 L25.3663004,42.0238095 L25.1245421,41.6666667 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

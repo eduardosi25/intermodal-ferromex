@@ -1,0 +1,137 @@
+/* ------------------------------------------------------------
+    FONTS
+------------------------------------------------------------ */
+@import 'https://code.highcharts.com/css/highcharts.css';
+
+//Fonts
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/OpenSans-Regular.eot');
+  src: url('/fonts/OpenSans-Regular.woff2') format('woff2'), url('/fonts/OpenSans-Regular.woff') format('woff'), url('/fonts/OpenSans-Regular.ttf') format('truetype'), url('/fonts/OpenSans-Regular.svg') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('/fonts/OpenSans-Bold.eot');
+  src: url('/fonts/OpenSans-Bold.woff2') format('woff2'), url('/fonts/OpenSans-Bold.woff') format('woff'), url('/fonts/OpenSans-Bold.ttf') format('truetype'), url('/fonts/OpenSans-Bold.svg') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/* ------------------------------------------------------------
+    COLORS
+------------------------------------------------------------ */
+@cGray: #455560; // Opacidad -- Light:80%, Lighter:20%
+@cGray2: #f5f5f5;
+@cGray3: #d8d8d8;
+@cGray4: #a2a2a2;
+@cGray5: #2d3033;
+@cGray6: #eeeeee;
+@cGray7: #7f8f9a;
+@cGray8: #a2aaaf;
+@cGray9: #f7f7f7;
+@cGray10: #e4e4e4;
+@cGray11: #F2F5F7;
+@cGray12: #37454F;
+@cGray13: #5E6E79;
+@cGray14: #DDE2E6;
+@cGray15: #939BA1;
+@cRed: #98002e; // Opacidad -- Light:80%, Lighter:10%
+@cRed2: #ffecef;
+@cRed3: #ffbdc8;
+@cRed4: #ea3f30;
+@cRed5: #cc3629;
+@cRed6: #ffc1bb;
+@cRed7: #ba525d;
+@cRed8: #a14e57;
+@cRed9: #cfbbbd;
+@cBrown: #ba8748; // Opacidad -- Light:80%, Lighter:20%
+@cBrown2: #d5a162;
+@cGreen: #00b152;
+@cGreen2: #2a9442;
+@cGreen3: #248239;
+@cGreen4: #e5ffe4;
+@cGreen5: #1e4e43;
+@cWhite: #fff;
+@cBlue1: #ebedef;
+@cBlue2: #3d82f4;
+@cBlue3: #093d94;
+@cBlue4: #2f77e8;
+@cBlue5: #cadaf3;
+@cBlue6: #3a5d94;
+@cYellow: #f7b904;
+@cYellow2: #e8ae03;
+@cYellow3: #ffecb4;
+
+/* ------------------------------------------------------------
+    DEGRADADO HEADER
+------------------------------------------------------------ */
+.bg-dark__1 {
+    background: rgba(18,112,145,1);
+    background: -moz-linear-gradient(left, rgba(18,112,145,1) 0%, rgba(69,85,96,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(18,112,145,1)), color-stop(100%, rgba(69,85,96,1)));
+    background: -webkit-linear-gradient(left, rgba(18,112,145,1) 0%, rgba(69,85,96,1) 100%);
+    background: -o-linear-gradient(left, rgba(18,112,145,1) 0%, rgba(69,85,96,1) 100%);
+    background: -ms-linear-gradient(left, rgba(18,112,145,1) 0%, rgba(69,85,96,1) 100%);
+    background: linear-gradient(to right, rgba(18,112,145,1) 0%, rgba(69,85,96,1) 100%);
+}
+
+.bg-dark__2 {
+    background: -moz-linear-gradient(left, rgba(66,74,82,1) 0%, rgba(69,85,96,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(66,74,82,1)), color-stop(100%, rgba(69,85,96,1)));
+    background: -webkit-linear-gradient(left, rgba(66,74,82,1) 0%, rgba(69,85,96,1) 100%);
+    background: -o-linear-gradient(left, rgba(66,74,82,1) 0%, rgba(69,85,96,1) 100%);
+    background: -ms-linear-gradient(left, rgba(66,74,82,1) 0%, rgba(69,85,96,1) 100%);
+    background: linear-gradient(to right, rgba(66,74,82,1) 0%, rgba(69,85,96,1) 100%);
+}
+
+.bg-dark__3 {
+    background: rgba(46,56,64,1);
+    background: -moz-linear-gradient(left, rgba(46,56,64,1) 0%, rgba(69,85,96,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(46,56,64,1)), color-stop(100%, rgba(69,85,96,1)));
+    background: -webkit-linear-gradient(left, rgba(46,56,64,1) 0%, rgba(69,85,96,1) 100%);
+    background: -o-linear-gradient(left, rgba(46,56,64,1) 0%, rgba(69,85,96,1) 100%);
+    background: -ms-linear-gradient(left, rgba(46,56,64,1) 0%, rgba(69,85,96,1) 100%);
+    background: linear-gradient(to right, rgba(46,56,64,1) 0%, rgba(69,85,96,1) 100%);
+}
+
+/* ------------------------------------------------------------
+    COLUMNAS
+------------------------------------------------------------ */
+@media (min-width: 576px) {
+    .card-b {
+        margin-bottom: 30px;
+    }
+    .card-columns1 {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 1;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+    }
+    .card-columns2 {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+    }
+  .card-columns3 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+  .card-columns .card,
+  .card-columns1 .card,
+  .card-columns2 .card {
+    display: inline-block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,160 @@
+/* ------------------------------------------------------------
+    DATEPICKER
+------------------------------------------------------------ */
+.module-datepicker {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+
+    .col-reset {
+        padding: 0;
+    }
+
+    .input-icon {
+        .icon-clock {
+            position: relative;
+            font-size: 20px;
+            top: 10px;
+            color: @cRed;
+        }
+    }
+
+    .input-group-text {
+        background-color: @cWhite;
+        border: 0;
+
+        .fa-calendar  {
+            font-size: 20px !important;
+            color: @cRed;
+        }
+    }
+
+    .form-group__inline {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .form-search {
+        .form-control {
+            border-radius: 0;
+            padding: 11px 10px;
+            width: 230px;
+            font-size: 15px;
+        }
+
+        .btn-red {
+            font-size: 15px;
+            padding: 11px 15px;
+            text-transform: uppercase;
+            background-color: @cRed;
+            border: 1px solid @cRed;
+            border-radius: 0;
+
+            &:hover {
+                text-transform: uppercase;
+                background-color: transparent;
+                border: 1px solid @cRed;
+                border-radius: 0;
+            }
+        }
+    }
+
+    .col-large {
+        .form-control,
+        .btn-red  {
+            width: 100%;
+        }
+    }
+
+    .form-inline {
+        display: inline-block;
+        width: 100%;
+
+        .field-small {
+            height: 10px;
+        }
+    }
+
+    .clock-icon {
+        display: inline-block;
+        float: left;
+        padding: 0 20px;
+    }
+}
+
+.input-group-text {
+    background-color: @cWhite !important;
+    border: 0 !important;
+
+    .fa-calendar-alt  {
+        font-size: 20px !important;
+        color: @cRed;
+    }
+
+    &.icon-calendar__reset {
+        z-index: 1;
+        background: transparent;
+        padding-right: 0;
+    }
+}
+
+.datepicker-content {
+    .form-group {
+        width: 100%;
+
+        input {
+            padding: 7px 10px;
+            border-radius: 0;
+        }
+
+        .input-group-append {
+            .input-group-text {
+                border-radius: 0;
+                padding: 0 20px;
+
+                .fa-calendar {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .input-group {
+            input {
+                font-size: 15px;
+            }
+        }
+    }
+
+    label {
+        font-size: 13px;
+    }
+}
+
+.icon-calendar__tall {
+    height: 30px;
+}
+
+.bootstrap-datetimepicker-widget {
+    width: 250px !important;
+}
+
+.bootstrap-datetimepicker-widget {
+    table {
+        td {
+            &.active {
+                background-color: @cRed !important;
+            }
+        }
+    }
+}
+
+.bootstrap-datetimepicker-widget table td.today:before {
+    border-bottom-color: @cRed !important;
+}
+
+.bootstrap-datetimepicker-widget table td.day:hover {
+    background: @cRed2 !important;
+    color: black !important;
+}

@@ -1,0 +1,79 @@
+<main class="content-box">
+    <section class="module">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-reset">
+                    <li class="breadcrumb-item"><a class="text" href="#">Mi cuenta</a></li>
+                    <li class="breadcrumb-item text active" aria-current="page">Mis datos</li>
+                </ol>
+            </nav>
+
+            <div class="form-basic bg-gray pad-tb">
+                <div class="title3 ">
+                    <h3 class="center-text">Mis datos</h3>
+                </div>
+                <form class="form-item center-content reg-form" #registerForm="ngForm" (ngSubmit)="dataChange()" *ngIf="dataUser">
+                    <div class=" form-group mb-5">
+                        <div class="row mb-5">
+                            <div class="col-md-6 col-xs-12">
+                                <label>Nombre (s)*</label>
+                                <input type="text" name="name" class="form-control is-invalid is-invalid__1" #name="ngModel" [(ngModel)]="dataUserForm.name" placeholder="{{dataUser.name}}" required/>
+
+
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <label>Apellido paterno*</label>
+                                <input type="text" name="lastname" class="form-control is-invalid is-invalid__1" #lastname="ngModel" [(ngModel)]="dataUserForm.lastname" [ngModelOptions]="{standalone: true}" placeholder="{{dataUser.lastname}}" required="">
+
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-md-6 col-xs-12">
+                                <label>Apellido materno</label>
+                                <input type="text" name="lastname2" class="form-control is-invalid is-invalid__1" #lastname2="ngModel" [(ngModel)]="dataUserForm.lastname2" [ngModelOptions]="{standalone: true}" placeholder="{{dataUser.lastname2}}">
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <label>Teléfono (10 dígitos)*</label>
+                                <input type="text" name="phone" class="form-control is-invalid is-invalid__1" #phone="ngModel" [(ngModel)]="dataUserForm.phone" [ngModelOptions]="{standalone: true}" placeholder="{{dataUser.phone}}">
+
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-xs-12">
+                                <label>Correo electrónico</label>
+                                <input type="text" name="email" class="form-control is-invalid is-invalid__1" #email="ngModel" [(ngModel)]="dataUserForm.email" [ngModelOptions]="{standalone: true}" placeholder="{{dataUser.email}}">
+
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-md-6 col-xs-12">
+                                <label>Contraseña</label>
+                                <input type="password" name="password" class="form-control is-invalid is-invalid__1" #password="ngModel" [(ngModel)]="dataUserForm.password" [ngModelOptions]="{standalone: true}" placeholder="Mínimo 8 caracteres alfanuméricos">
+
+                            </div>
+                            <!--
+                            <div class="col-md-6 col-xs-12">
+                                <label>Confirmar contraseña</label>
+                                <input type="password" class="form-control is-invalid is-invalid__1" placeholder="Mínimo 8 caracteres alfanuméricos" >
+                                <div class="invalid-feedback invalid-1 invalid-password js-normal">
+                                    <i class="fas fa-exclamation-circle icon-exclamation"></i> Campo requerido
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    <div class="alert alert-success" *ngIf="status == 'success'">
+                        Tus datos se han actualizado correctamente.
+                    </div>
+                    <div class="alert alert-danger" *ngIf="status == 'error'">
+                        {{userStatus}}
+                    </div>
+                    <div class="text-center pt-5">
+                        <button type="button" class="btn btn-default btn-link btn-xl btn-size1"> Cancelar </button>
+                        <button type="submit" class="btn btn-default btn-red btn-xl btn-size1"> GUARDAR </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>

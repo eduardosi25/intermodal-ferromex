@@ -1,0 +1,34 @@
+/* ------------------------------------------------------------
+    GRID
+------------------------------------------------------------ */
+.bs-grid-block {
+    border: 2px dashed #c3c3c3;
+    font-weight: 300;
+    font-size: 1.538rem;
+    color: #807e7e;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 40px;
+
+    .content {
+        display: table-cell;
+        height: 177px;
+        text-align: center;
+        vertical-align: middle;
+
+        .size {
+            display: block;
+        }
+
+        .device {
+           line-height: 0;
+
+           &::after {
+               font-size: 14px;
+                content: 'Large Desktop';
+                color: @cBlue2;
+           }
+        }
+    }
+}

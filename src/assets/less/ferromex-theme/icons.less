@@ -1,0 +1,114 @@
+/* ------------------------------------------------------------
+    ICONS
+------------------------------------------------------------ */
+.icon-caret-down {
+    position: relative;
+    float: right;
+    top: 4px;
+}
+
+.icon-size {
+    font-size: 40px;
+}
+.icon-like {
+    color: @cBlue2;
+}
+.icon-trash {
+    color: @cGray7;
+}
+
+.icon-image {
+    color: @cYellow;
+}
+
+.icon-exclamation {
+    color: @cRed4;
+}
+
+.icon-exclamation1 {
+    color: @cYellow;
+}
+
+.icon-check-email {
+    color: @cGreen2;
+    font-size: 40px;
+}
+
+.icon-container {
+    background-color: @cWhite;
+    padding: 20px;
+    cursor: default;
+
+    .icon-item {
+        transition: background-color .3s ease-in-out;
+        background-color: @cGray2;
+        border-radius: 50%;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        margin-right: 8px;
+        padding: 13px;
+        text-align: center;
+        vertical-align: middle;
+
+        .icon-item__inside {
+            transition: color .3s ease-in-out;
+            font-size: 20px;
+            color: @cGray7;
+        }
+    }
+
+    .icon-text {
+        transition: color .3s ease-in-out;
+        font-size: 1.385rem;
+        font-weight: 300;
+        vertical-align: middle;
+        color: @cGray5;
+    }
+
+    &:hover {
+        .icon-item {
+            background-color: @cBlue2;
+
+            .icon-item__inside {
+                color: @cWhite;
+            }
+        }
+        .icon-text {
+            color: @cBlue2;
+        }
+    }
+}
+
+//iconos tablas
+.icons-list {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+
+    .icons-list__list {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        float: right;
+
+        .icons-list__item {
+            font-size: 20px;
+            float: left;
+            margin-right: 20px;
+            cursor: pointer;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            .icons-list__link {
+                color: @cGray;
+                &:hover {
+                    color: @cRed;
+                }
+            }
+        }
+    }
+}

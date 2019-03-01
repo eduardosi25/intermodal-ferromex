@@ -1,0 +1,8 @@
+.errorRegister {
+    color: red;
+    font-size: 13px;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+}

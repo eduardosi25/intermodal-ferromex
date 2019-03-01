@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>up-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CTA-icon" transform="translate(-10.000000, -9.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="up-arrow">
+                <g transform="translate(10.000000, 9.000000)">
+                    <path d="M16,1.71428571 L16,14.2857143 C15.9972098,15.2313058 15.2313058,15.9972098 14.2857143,16 L8.57142857,16 L8.57142857,3.09137836 L10.8285435,5.34863282 L11.6343471,4.54282925 L8.40569196,1.30859375 C8.18108257,1.0856585 7.81891743,1.0856585 7.59430804,1.30859375 L4.36565289,4.54282925 L5.17145646,5.34863282 L7.42857143,3.09137836 L7.42857143,16 L1.71428571,16 C0.768694214,15.9972098 0.00279017857,15.2313058 0,14.2857143 L0,1.71428571 C0.00279017857,0.768694214 0.768694214,0.00279017857 1.71428571,0 L14.2857143,0 C15.2313058,0.00279017857 15.9972098,0.768694214 16,1.71428571 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
